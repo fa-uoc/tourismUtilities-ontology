@@ -84,7 +84,8 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://purl.archive.org/tourism-utilities-ontology#finances
 :finances rdf:type owl:ObjectProperty ;
-          owl:inverseOf :isFinancedBy .
+          owl:inverseOf :isFinancedBy ;
+          rdfs:range <http://dbpedia.org/property/PublicService> .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#hosts
@@ -100,17 +101,16 @@ xsd:date rdf:type rdfs:Datatype .
 
 ###  https://purl.archive.org/tourism-utilities-ontology#isManagedBy
 :isManagedBy rdf:type owl:ObjectProperty ;
-             owl:inverseOf :manages .
+             owl:inverseOf :manages ;
+             rdfs:range :Company .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#isOfType
 :isOfType rdf:type owl:ObjectProperty ;
           owl:inverseOf :isTypeOf ;
           rdf:type owl:FunctionalProperty ;
-          rdfs:domain [ rdf:type owl:Restriction ;
-                        owl:onProperty :isOfType ;
-                        owl:someValuesFrom schema:Enumeration
-                      ] .
+          rdfs:domain schema:Enumeration ;
+          owl:propertyDisjointWith :isTypeOf .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#isTypeOf
@@ -171,13 +171,15 @@ schema:startDate rdf:type owl:DatatypeProperty ;
 
 ###  https://purl.archive.org/tourism-utilities-ontology#averagePrice
 :averagePrice rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf schema:price .
+              rdfs:subPropertyOf schema:price ;
+              rdfs:range xsd:double .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#pricePerNight
 :pricePerNight rdf:type owl:DatatypeProperty ;
                rdfs:subPropertyOf schema:price ;
-               rdfs:domain :Hotel .
+               rdfs:domain :Hotel ;
+               rdfs:range xsd:double .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#starRating
