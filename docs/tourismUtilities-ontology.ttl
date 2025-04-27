@@ -1,15 +1,69 @@
 @prefix : <https://purl.archive.org/tourism-utilities-ontology#> .
 @prefix dbp: <http://dbpedia.org/ontology/> .
+@prefix dct: <http://purl.org/dc/terms/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
 @prefix schema: <http://schema.org/> .
 @base <https://purl.archive.org/tourism-utilities-ontology#> .
 
 <https://purl.archive.org/tourism-utilities-ontology#> rdf:type owl:Ontology ;
-                                                        rdfs:comment "This ontology describes the tourist utilities of 11 spanish cities in order to help event planning and management. It has been produced as a practical assignment for the subject Knowledge Representation in Computer Science at Universitat Oberta de Catalunya." .
+                                                        owl:versionIRI <https://purl.archive.org/tourism-utilities-ontology/1.0> ;
+                                                        dct:created "2025-04-27"^^xsd:date ;
+                                                        dct:creator "famorn  A T  uoc.edu" ;
+                                                        dct:description "This ontology describes the tourist utilities of 11 spanish cities in order to help event planning and management. It has been produced as a practical assignment for the subject Knowledge Representation in Computer Science at Universitat Oberta de Catalunya." ;
+                                                        dct:issued "2025-04-27"^^xsd:date ;
+                                                        dct:license "https://creativecommons.org/licenses/by/4.0/" ;
+                                                        dct:title "Tourism Utilities" ;
+                                                        bibo:status "Awaiting feedback and corrections." ;
+                                                        vann:preferredNamespacePrefix "" ,
+                                                                                      "tour" ;
+                                                        schema:image "https://purl.archive.org/tourism-utilities-ontology/img" ;
+                                                        rdfs:label "Tourism Utilities"@en .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+dct:created rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dct:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dct:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/issued
+dct:issued rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+dct:license rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dct:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/ontology/bibo/status
+bibo:status rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/image
+schema:image rdf:type owl:AnnotationProperty .
+
 
 #################################################################
 #    Datatypes
