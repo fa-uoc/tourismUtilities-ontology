@@ -66,6 +66,9 @@
     "@value" : "PublicService"
   } ]
 }, {
+  "@id" : "http://purl.org/dc/terms/abstract",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
   "@id" : "http://purl.org/dc/terms/created",
   "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
 }, {
@@ -264,6 +267,9 @@
 }, {
   "@id" : "https://purl.archive.org/tourism-utilities-ontology#",
   "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/abstract" : [ {
+    "@value" : "This ontology has been created is part of an assignment in a Knowledge Representation course at Universitat Oberta de Catalunya. It has been developed with the main objective of learning the possibilities and structure of ontologies."
+  } ],
   "http://purl.org/dc/terms/created" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#date",
     "@value" : "2025-04-27"

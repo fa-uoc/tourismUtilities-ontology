@@ -13,6 +13,7 @@
      xmlns:tourism-utilities-ontology="https://purl.archive.org/tourism-utilities-ontology#">
     <owl:Ontology rdf:about="https://purl.archive.org/tourism-utilities-ontology#">
         <owl:versionIRI rdf:resource="https://purl.archive.org/tourism-utilities-ontology/1.0"/>
+        <terms:abstract>This ontology has been created is part of an assignment in a Knowledge Representation course at Universitat Oberta de Catalunya. It has been developed with the main objective of learning the possibilities and structure of ontologies.</terms:abstract>
         <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-04-27</terms:created>
         <terms:creator>famorn  A T  uoc.edu</terms:creator>
         <terms:description>This ontology describes the tourist utilities of 11 spanish cities in order to help event planning and management. It has been produced as a practical assignment for the subject Knowledge Representation in Computer Science at Universitat Oberta de Catalunya.</terms:description>
@@ -37,6 +38,13 @@
      -->
 
 
+    
+
+
+    <!-- http://purl.org/dc/terms/abstract -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/abstract"/>
     
 
 
