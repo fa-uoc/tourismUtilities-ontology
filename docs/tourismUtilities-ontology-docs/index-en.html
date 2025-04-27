@@ -3759,6 +3759,18 @@ This ontology has the following classes and properties.</span>
          <span>Zaragoza</span>
       </a>
    </li>
+</ul><h4> SWRL Rules </h4><ul xmlns:widoco="https://w3id.org/widoco/vocab#"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    class="hlist">
+   <li>
+      <a href="#d4e11246">Rule #1</a>
+   </li>
+   <li>
+      <a href="#d4e11299">Rule #2</a>
+   </li>
+   <li>
+      <a href="#d4e11352">Rule #3</a>
+   </li>
 </ul><iframe src="webvowl/index.html"></iframe> 
 </div>
   
@@ -3917,6 +3929,12 @@ This section provides details for each class and property defined by Tourism Uti
    <span class="markdown">Helps classificating an event by its characteristics</span>
   </div>
   <dl class="description">
+   <dt>
+    is equivalent to
+   </dt>
+   <dd>
+    { <a href="#culturalEvent" title="https://purl.archive.org/tourism-utilities-ontology#culturalEvent">cultural Event</a> <sup class="type-ni" title="named individual">ni</sup> , <a href="#gastronomicEvent" title="https://purl.archive.org/tourism-utilities-ontology#gastronomicEvent">gastronomic Event</a> <sup class="type-ni" title="named individual">ni</sup> , <a href="#musicEvent" title="https://purl.archive.org/tourism-utilities-ontology#musicEvent">music Event</a> <sup class="type-ni" title="named individual">ni</sup> , <a href="#sportsEvent" title="https://purl.archive.org/tourism-utilities-ontology#sportsEvent">sports Event</a> <sup class="type-ni" title="named individual">ni</sup> , <a href="#technologicalEvent" title="https://purl.archive.org/tourism-utilities-ontology#technologicalEvent">technological Event</a> <sup class="type-ni" title="named individual">ni</sup> }
+   </dd>
    <dt>
     has super-classes
    </dt>
@@ -20978,6 +20996,25 @@ This section provides details for each class and property defined by Tourism Uti
     <a href="#http://schema.org/name" title="http://schema.org/name">name</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"Zaragoza"</span>
    </dd>
   </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="swrlrules">
+ <h3 id="swrlrules" class="list">SWRL rules</h3>
+ <ul class="hlist">
+  <li><a href="#d4e11246">Rule #1</a></li>
+  <li><a href="#d4e11299">Rule #2</a></li>
+  <li><a href="#d4e11352">Rule #3</a></li>
+ </ul>
+ <div class="entity" id="d4e11246">
+  <h3>Rule #1<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
+  <p><a href="#isOfType" title="https://purl.archive.org/tourism-utilities-ontology#isOfType">is Of Type</a> <sup class="type-op" title="object property">op</sup>(?X,?Y) -&gt; <a href="https://purl.archive.org/tourism-utilities-ontology#isTypeOf" target="_blank" title="https://purl.archive.org/tourism-utilities-ontology#isTypeOf">is Type Of</a> <sup class="type-op" title="object property">op</sup>(?Y,?X)</p>
+ </div>
+ <div class="entity" id="d4e11299">
+  <h3>Rule #2<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
+  <p><a href="https://purl.archive.org/tourism-utilities-ontology#locatedIn" target="_blank" title="https://purl.archive.org/tourism-utilities-ontology#locatedIn">located In</a> <sup class="type-op" title="object property">op</sup>(?X,?Y) -&gt; <a href="#hosts" title="https://purl.archive.org/tourism-utilities-ontology#hosts">hosts</a> <sup class="type-op" title="object property">op</sup>(?Y,?X)</p>
+ </div>
+ <div class="entity" id="d4e11352">
+  <h3>Rule #3<span class="backlink">back to <a href="#toc">ToC</a> or <a href="#swrlrules">SWRL ToC</a> </span></h3>
+  <p><a href="https://purl.archive.org/tourism-utilities-ontology#takesPlaceIn" target="_blank" title="https://purl.archive.org/tourism-utilities-ontology#takesPlaceIn">takes Place In</a> <sup class="type-op" title="object property">op</sup>(?X,?Y) -&gt; <a href="https://purl.archive.org/tourism-utilities-ontology#locatedIn" target="_blank" title="https://purl.archive.org/tourism-utilities-ontology#locatedIn">located In</a> <sup class="type-op" title="object property">op</sup>(?X,?Y)</p>
  </div>
 </div><div id="legend">
 <h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>

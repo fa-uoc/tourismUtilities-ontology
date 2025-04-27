@@ -12,6 +12,38 @@
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
+      "@id" : "https://purl.archive.org/tourism-utilities-ontology#beach"
+    }, {
+      "@id" : "https://purl.archive.org/tourism-utilities-ontology#culturalAttraction"
+    }, {
+      "@id" : "https://purl.archive.org/tourism-utilities-ontology#monument"
+    }, {
+      "@id" : "https://purl.archive.org/tourism-utilities-ontology#museum"
+    }, {
+      "@id" : "https://purl.archive.org/tourism-utilities-ontology#park"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
+      "@id" : "https://purl.archive.org/tourism-utilities-ontology#culturalEvent"
+    }, {
+      "@id" : "https://purl.archive.org/tourism-utilities-ontology#gastronomicEvent"
+    }, {
+      "@id" : "https://purl.archive.org/tourism-utilities-ontology#musicEvent"
+    }, {
+      "@id" : "https://purl.archive.org/tourism-utilities-ontology#sportsEvent"
+    }, {
+      "@id" : "https://purl.archive.org/tourism-utilities-ontology#technologicalEvent"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid20",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#oneOf" : [ {
+    "@list" : [ {
       "@id" : "https://purl.archive.org/tourism-utilities-ontology#bus"
     }, {
       "@id" : "https://purl.archive.org/tourism-utilities-ontology#publicBicycle"
@@ -24,7 +56,118 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid2",
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid28"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid30"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid28",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#Y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://purl.archive.org/tourism-utilities-ontology#isOfType"
+  } ]
+}, {
+  "@id" : "_:genid30",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#Y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://purl.archive.org/tourism-utilities-ontology#isTypeOf"
+  } ]
+}, {
+  "@id" : "_:genid31",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid33"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid35"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#Y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://purl.archive.org/tourism-utilities-ontology#locatedIn"
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#Y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://purl.archive.org/tourism-utilities-ontology#hosts"
+  } ]
+}, {
+  "@id" : "_:genid36",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Imp" ],
+  "http://www.w3.org/2003/11/swrl#body" : [ {
+    "@list" : [ {
+      "@id" : "_:genid38"
+    } ]
+  } ],
+  "http://www.w3.org/2003/11/swrl#head" : [ {
+    "@list" : [ {
+      "@id" : "_:genid40"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid38",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#Y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://purl.archive.org/tourism-utilities-ontology#takesPlaceIn"
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#IndividualPropertyAtom" ],
+  "http://www.w3.org/2003/11/swrl#argument1" : [ {
+    "@id" : "urn:swrl:var#X"
+  } ],
+  "http://www.w3.org/2003/11/swrl#argument2" : [ {
+    "@id" : "urn:swrl:var#Y"
+  } ],
+  "http://www.w3.org/2003/11/swrl#propertyPredicate" : [ {
+    "@id" : "https://purl.archive.org/tourism-utilities-ontology#locatedIn"
+  } ]
+}, {
+  "@id" : "_:genid8",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#oneOf" : [ {
     "@list" : [ {
@@ -37,22 +180,6 @@
       "@id" : "https://purl.archive.org/tourism-utilities-ontology#ruralHotel"
     }, {
       "@id" : "https://purl.archive.org/tourism-utilities-ontology#touristicHotel"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid8",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#oneOf" : [ {
-    "@list" : [ {
-      "@id" : "https://purl.archive.org/tourism-utilities-ontology#beach"
-    }, {
-      "@id" : "https://purl.archive.org/tourism-utilities-ontology#culturalAttraction"
-    }, {
-      "@id" : "https://purl.archive.org/tourism-utilities-ontology#monument"
-    }, {
-      "@id" : "https://purl.archive.org/tourism-utilities-ontology#museum"
-    }, {
-      "@id" : "https://purl.archive.org/tourism-utilities-ontology#park"
     } ]
   } ]
 }, {
@@ -461,6 +588,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://schema.org/Enumeration"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid2"
   } ]
 }, {
   "@id" : "https://purl.archive.org/tourism-utilities-ontology#HospitalityUtility",
@@ -501,7 +631,7 @@
     "@id" : "http://schema.org/Enumeration"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid2"
+    "@id" : "_:genid8"
   } ]
 }, {
   "@id" : "https://purl.archive.org/tourism-utilities-ontology#LocalTransportUtility",
@@ -839,7 +969,7 @@
     "@id" : "http://schema.org/Enumeration"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid8"
+    "@id" : "_:genid14"
   } ]
 }, {
   "@id" : "https://purl.archive.org/tourism-utilities-ontology#TouristicResource",
@@ -983,7 +1113,7 @@
     "@id" : "http://schema.org/Enumeration"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid14"
+    "@id" : "_:genid20"
   } ]
 }, {
   "@id" : "https://purl.archive.org/tourism-utilities-ontology#UrbanBarcelona",
@@ -7665,6 +7795,9 @@
     "@id" : "_:genid1"
   } ]
 }, {
+  "@id" : "https://purl.archive.org/tourism-utilities-ontology#isTypeOf",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
+}, {
   "@id" : "https://purl.archive.org/tourism-utilities-ontology#locatedIn",
   "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ]
 }, {
@@ -11985,4 +12118,10 @@
   "http://www.w3.org/2000/01/rdf-schema#range" : [ {
     "@id" : "http://www.w3.org/2001/XMLSchema#double"
   } ]
+}, {
+  "@id" : "urn:swrl:var#X",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
+}, {
+  "@id" : "urn:swrl:var#Y",
+  "@type" : [ "http://www.w3.org/2003/11/swrl#Variable" ]
 } ]

@@ -7,7 +7,9 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:bibo="http://purl.org/ontology/bibo/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
      xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:schema="http://schema.org/"
      xmlns:tourism-utilities-ontology="https://purl.archive.org/tourism-utilities-ontology#">
@@ -190,6 +192,13 @@
             </owl:Restriction>
         </rdfs:domain>
     </owl:ObjectProperty>
+    
+
+
+    <!-- https://purl.archive.org/tourism-utilities-ontology#isTypeOf -->
+
+
+    <owl:ObjectProperty rdf:about="https://purl.archive.org/tourism-utilities-ontology#isTypeOf"/>
     
 
 
@@ -471,6 +480,17 @@
 
 
     <owl:Class rdf:about="https://purl.archive.org/tourism-utilities-ontology#EventType">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://purl.archive.org/tourism-utilities-ontology#culturalEvent"/>
+                    <rdf:Description rdf:about="https://purl.archive.org/tourism-utilities-ontology#gastronomicEvent"/>
+                    <rdf:Description rdf:about="https://purl.archive.org/tourism-utilities-ontology#musicEvent"/>
+                    <rdf:Description rdf:about="https://purl.archive.org/tourism-utilities-ontology#sportsEvent"/>
+                    <rdf:Description rdf:about="https://purl.archive.org/tourism-utilities-ontology#technologicalEvent"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://schema.org/Enumeration"/>
         <rdfs:comment>Helps classificating an event by its characteristics</rdfs:comment>
         <rdfs:label>EventType</rdfs:label>
@@ -8234,6 +8254,117 @@
     <owl:NamedIndividual rdf:about="https://purl.archive.org/tourism-utilities-ontology#underground">
         <rdf:type rdf:resource="https://purl.archive.org/tourism-utilities-ontology#TransportType"/>
     </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="urn:swrl:var#X">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="urn:swrl:var#Y">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://purl.archive.org/tourism-utilities-ontology#isOfType"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#Y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://purl.archive.org/tourism-utilities-ontology#isTypeOf"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#Y"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#X"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://purl.archive.org/tourism-utilities-ontology#locatedIn"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#Y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://purl.archive.org/tourism-utilities-ontology#hosts"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#Y"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#X"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://purl.archive.org/tourism-utilities-ontology#takesPlaceIn"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#Y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
+                        <swrl:propertyPredicate rdf:resource="https://purl.archive.org/tourism-utilities-ontology#locatedIn"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#Y"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
 </rdf:RDF>
 
 
