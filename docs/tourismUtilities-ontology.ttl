@@ -13,6 +13,7 @@
 
 <https://purl.archive.org/tourism-utilities-ontology#> rdf:type owl:Ontology ;
                                                         owl:versionIRI <https://purl.archive.org/tourism-utilities-ontology/1.0> ;
+                                                        dct:abstract "This ontology has been created is part of an assignment in a Knowledge Representation course at Universitat Oberta de Catalunya. It has been developed with the main objective of learning the possibilities and structure of ontologies." ;
                                                         dct:created "2025-04-27"^^xsd:date ;
                                                         dct:creator "famorn  A T  uoc.edu" ;
                                                         dct:description "This ontology describes the tourist utilities of 11 spanish cities in order to help event planning and management. It has been produced as a practical assignment for the subject Knowledge Representation in Computer Science at Universitat Oberta de Catalunya." ;
@@ -28,6 +29,10 @@
 #################################################################
 #    Annotation properties
 #################################################################
+
+###  http://purl.org/dc/terms/abstract
+dct:abstract rdf:type owl:AnnotationProperty .
+
 
 ###  http://purl.org/dc/terms/created
 dct:created rdf:type owl:AnnotationProperty .
