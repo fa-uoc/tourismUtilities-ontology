@@ -1,11 +1,11 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="http://www.semanticweb.org/uoc/ontologies/2025/3/tourismUtilities"
+     xml:base="https://purl.archive.org/domain/tourism-utilities-ontology"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="http://www.semanticweb.org/uoc/ontologies/2025/3/tourismUtilities">
+     ontologyIRI="https://purl.archive.org/domain/tourism-utilities-ontology">
     <Prefix name="" IRI="http://www.semanticweb.org/uoc/ontologies/2025/3/tourismUtilities/"/>
     <Prefix name="dbp" IRI="http://dbpedia.org/ontology/"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
@@ -46,6 +46,9 @@
         <Class abbreviatedIRI="schema:Restaurant"/>
     </Declaration>
     <Declaration>
+        <Class abbreviatedIRI="rdfs:Resource"/>
+    </Declaration>
+    <Declaration>
         <Class IRI="#Company"/>
     </Declaration>
     <Declaration>
@@ -83,9 +86,6 @@
     </Declaration>
     <Declaration>
         <Class IRI="#TransportType"/>
-    </Declaration>
-    <Declaration>
-        <Class abbreviatedIRI="rdfs:Resource"/>
     </Declaration>
     <Declaration>
         <ObjectProperty IRI="#finances"/>
@@ -12843,6 +12843,26 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>rdfs:Resource</AbbreviatedIRI>
+        <Literal xml:lang="en">Rdfs Resource class</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>rdfs:Resource</AbbreviatedIRI>
+        <Literal xml:lang="en">Resource</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal>Generic root concept of the ontology</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
+        <Literal xml:lang="en">Thing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Company</IRI>
         <Literal>Association targetting economical benefit.</Literal>
     </AnnotationAssertion>
@@ -12970,26 +12990,6 @@
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#TransportType</IRI>
         <Literal>TransportType</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>rdfs:Resource</AbbreviatedIRI>
-        <Literal xml:lang="en">Rdfs Resource class</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>rdfs:Resource</AbbreviatedIRI>
-        <Literal xml:lang="en">Resource</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
-        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
-        <Literal>Generic root concept of the ontology</Literal>
-    </AnnotationAssertion>
-    <AnnotationAssertion>
-        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
-        <AbbreviatedIRI>owl:Thing</AbbreviatedIRI>
-        <Literal xml:lang="en">Thing</Literal>
     </AnnotationAssertion>
 </Ontology>
 
