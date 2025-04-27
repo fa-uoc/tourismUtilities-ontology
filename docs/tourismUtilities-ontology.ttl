@@ -214,14 +214,6 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 ###  https://purl.archive.org/tourism-utilities-ontology#EventType
 :EventType rdf:type owl:Class ;
-           owl:equivalentClass [ rdf:type owl:Class ;
-                                 owl:oneOf ( :culturalEvent
-                                             :gastronomicEvent
-                                             :musicEvent
-                                             :sportsEvent
-                                             :technologicalEvent
-                                           )
-                               ] ;
            rdfs:subClassOf schema:Enumeration ;
            rdfs:comment "Helps classificating an event by its characteristics" ;
            rdfs:label "EventType" .
@@ -351,55 +343,55 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 ###  https://purl.archive.org/tourism-utilities-ontology#CityBarcelona
 :CityBarcelona rdf:type owl:NamedIndividual ,
-                        :Company ;
+                        :TransportCompany ;
                schema:name "City Barcelona" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#CityBilbao
 :CityBilbao rdf:type owl:NamedIndividual ,
-                     :Company ;
+                     :TransportCompany ;
             schema:name "City Bilbao" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#CityCádiz
 :CityCádiz rdf:type owl:NamedIndividual ,
-                    :Company ;
+                    :TransportCompany ;
            schema:name "City Cádiz" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#CityMadrid
 :CityMadrid rdf:type owl:NamedIndividual ,
-                     :Company ;
+                     :TransportCompany ;
             schema:name "City Madrid" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#CityMálaga
 :CityMálaga rdf:type owl:NamedIndividual ,
-                     :Company ;
+                     :TransportCompany ;
             schema:name "City Málaga" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#CityPamplona
 :CityPamplona rdf:type owl:NamedIndividual ,
-                       :Company ;
+                       :TransportCompany ;
               schema:name "City Pamplona" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#CitySevilla
 :CitySevilla rdf:type owl:NamedIndividual ,
-                      :Company ;
+                      :TransportCompany ;
              schema:name "City Sevilla" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#CityToledo
 :CityToledo rdf:type owl:NamedIndividual ,
-                     :Company ;
+                     :TransportCompany ;
             schema:name "City Toledo" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#CityZaragoza
 :CityZaragoza rdf:type owl:NamedIndividual ,
-                       :Company ;
+                       :TransportCompany ;
               schema:name "City Zaragoza" .
 
 
@@ -421,121 +413,121 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MetroBarcelona
 :MetroBarcelona rdf:type owl:NamedIndividual ,
-                         :Company ;
+                         :TransportCompany ;
                 schema:name "Metro Barcelona" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MetroBilbao
 :MetroBilbao rdf:type owl:NamedIndividual ,
-                      :Company ;
+                      :TransportCompany ;
              schema:name "Metro Bilbao" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MetroCádiz
 :MetroCádiz rdf:type owl:NamedIndividual ,
-                     :Company ;
+                     :TransportCompany ;
             schema:name "Metro Cádiz" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MetroMadrid
 :MetroMadrid rdf:type owl:NamedIndividual ,
-                      :Company ;
+                      :TransportCompany ;
              schema:name "Metro Madrid" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MetroMálaga
 :MetroMálaga rdf:type owl:NamedIndividual ,
-                      :Company ;
+                      :TransportCompany ;
              schema:name "Metro Málaga" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MetroPamplona
 :MetroPamplona rdf:type owl:NamedIndividual ,
-                        :Company ;
+                        :TransportCompany ;
                schema:name "Metro Pamplona" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MetroSanSebastián
 :MetroSanSebastián rdf:type owl:NamedIndividual ,
-                            :Company ;
+                            :TransportCompany ;
                    schema:name "Metro San Sebastián" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MetroSevilla
 :MetroSevilla rdf:type owl:NamedIndividual ,
-                       :Company ;
+                       :TransportCompany ;
               schema:name "Metro Sevilla" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MetroToledo
 :MetroToledo rdf:type owl:NamedIndividual ,
-                      :Company ;
+                      :TransportCompany ;
              schema:name "Metro Toledo" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MetroZaragoza
 :MetroZaragoza rdf:type owl:NamedIndividual ,
-                        :Company ;
+                        :TransportCompany ;
                schema:name "Metro Zaragoza" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MoviBarcelona
 :MoviBarcelona rdf:type owl:NamedIndividual ,
-                        :Company ;
+                        :TransportCompany ;
                schema:name "Movi Barcelona" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MoviBilbao
 :MoviBilbao rdf:type owl:NamedIndividual ,
-                     :Company ;
+                     :TransportCompany ;
             schema:name "Movi Bilbao" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MoviCádiz
 :MoviCádiz rdf:type owl:NamedIndividual ,
-                    :Company ;
+                    :TransportCompany ;
            schema:name "Movi Cádiz" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MoviMadrid
 :MoviMadrid rdf:type owl:NamedIndividual ,
-                     :Company ;
+                     :TransportCompany ;
             schema:name "Movi Madrid" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MoviMálaga
 :MoviMálaga rdf:type owl:NamedIndividual ,
-                     :Company ;
+                     :TransportCompany ;
             schema:name "Movi Málaga" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MoviPamplona
 :MoviPamplona rdf:type owl:NamedIndividual ,
-                       :Company ;
+                       :TransportCompany ;
               schema:name "Movi Pamplona" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MoviSanSebastián
 :MoviSanSebastián rdf:type owl:NamedIndividual ,
-                           :Company ;
+                           :TransportCompany ;
                   schema:name "Movi San Sebastián" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MoviSevilla
 :MoviSevilla rdf:type owl:NamedIndividual ,
-                      :Company ;
+                      :TransportCompany ;
              schema:name "Movi Sevilla" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MoviToledo
 :MoviToledo rdf:type owl:NamedIndividual ,
-                     :Company ;
+                     :TransportCompany ;
             schema:name "Movi Toledo" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#MoviValencia
 :MoviValencia rdf:type owl:NamedIndividual ,
-                       :Company ;
+                       :TransportCompany ;
               schema:name "Movi Valencia" .
 
 
@@ -581,121 +573,121 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 ###  https://purl.archive.org/tourism-utilities-ontology#TransBilbao
 :TransBilbao rdf:type owl:NamedIndividual ,
-                      :Company ;
+                      :TransportCompany ;
              schema:name "Trans Bilbao" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#TransCádiz
 :TransCádiz rdf:type owl:NamedIndividual ,
-                     :Company ;
+                     :TransportCompany ;
             schema:name "Trans Cádiz" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#TransMadrid
 :TransMadrid rdf:type owl:NamedIndividual ,
-                      :Company ;
+                      :TransportCompany ;
              schema:name "Trans Madrid" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#TransMálaga
 :TransMálaga rdf:type owl:NamedIndividual ,
-                      :Company ;
+                      :TransportCompany ;
              schema:name "Trans Málaga" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#TransPamplona
 :TransPamplona rdf:type owl:NamedIndividual ,
-                        :Company ;
+                        :TransportCompany ;
                schema:name "Trans Pamplona" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#TransSanSebastián
 :TransSanSebastián rdf:type owl:NamedIndividual ,
-                            :Company ;
+                            :TransportCompany ;
                    schema:name "Trans San Sebastián" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#TransSevilla
 :TransSevilla rdf:type owl:NamedIndividual ,
-                       :Company ;
+                       :TransportCompany ;
               schema:name "Trans Sevilla" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#TransToledo
 :TransToledo rdf:type owl:NamedIndividual ,
-                      :Company ;
+                      :TransportCompany ;
              schema:name "Trans Toledo" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#TransValencia
 :TransValencia rdf:type owl:NamedIndividual ,
-                        :Company ;
+                        :TransportCompany ;
                schema:name "Trans Valencia" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#TransZaragoza
 :TransZaragoza rdf:type owl:NamedIndividual ,
-                        :Company ;
+                        :TransportCompany ;
                schema:name "Trans Zaragoza" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#UrbanBarcelona
 :UrbanBarcelona rdf:type owl:NamedIndividual ,
-                         :Company ;
+                         :TransportCompany ;
                 schema:name "Urban Barcelona" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#UrbanBilbao
 :UrbanBilbao rdf:type owl:NamedIndividual ,
-                      :Company ;
+                      :TransportCompany ;
              schema:name "Urban Bilbao" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#UrbanMadrid
 :UrbanMadrid rdf:type owl:NamedIndividual ,
-                      :Company ;
+                      :TransportCompany ;
              schema:name "Urban Madrid" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#UrbanMálaga
 :UrbanMálaga rdf:type owl:NamedIndividual ,
-                      :Company ;
+                      :TransportCompany ;
              schema:name "Urban Málaga" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#UrbanPamplona
 :UrbanPamplona rdf:type owl:NamedIndividual ,
-                        :Company ;
+                        :TransportCompany ;
                schema:name "Urban Pamplona" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#UrbanSanSebastián
 :UrbanSanSebastián rdf:type owl:NamedIndividual ,
-                            :Company ;
+                            :TransportCompany ;
                    schema:name "Urban San Sebastián" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#UrbanSevilla
 :UrbanSevilla rdf:type owl:NamedIndividual ,
-                       :Company ;
+                       :TransportCompany ;
               schema:name "Urban Sevilla" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#UrbanToledo
 :UrbanToledo rdf:type owl:NamedIndividual ,
-                      :Company ;
+                      :TransportCompany ;
              schema:name "Urban Toledo" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#UrbanValencia
 :UrbanValencia rdf:type owl:NamedIndividual ,
-                        :Company ;
+                        :TransportCompany ;
                schema:name "Urban Valencia" .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#UrbanZaragoza
 :UrbanZaragoza rdf:type owl:NamedIndividual ,
-                        :Company ;
+                        :TransportCompany ;
                schema:name "Urban Zaragoza" .
 
 
@@ -1738,7 +1730,6 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 ###  https://purl.archive.org/tourism-utilities-ontology#evento_011
 :evento_011 rdf:type owl:NamedIndividual ,
                      schema:Event ;
-            :isOfType :technologicEvent ;
             :takesPlaceIn :Bilbao ;
             schema:name "Carnaval Bilbao" ;
             schema:startDate "2024-12-20"^^xsd:date .
@@ -1756,7 +1747,6 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 ###  https://purl.archive.org/tourism-utilities-ontology#evento_013
 :evento_013 rdf:type owl:NamedIndividual ,
                      schema:Event ;
-            :isOfType :technologicEvent ;
             :takesPlaceIn :Valencia ;
             schema:name "Congreso Valencia" ;
             schema:startDate "2024-08-13"^^xsd:date .
@@ -1783,7 +1773,6 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 ###  https://purl.archive.org/tourism-utilities-ontology#evento_016
 :evento_016 rdf:type owl:NamedIndividual ,
                      schema:Event ;
-            :isOfType :technologicEvent ;
             :takesPlaceIn :Sevilla ;
             schema:name "Concierto Sevilla" ;
             schema:startDate "2024-02-22"^^xsd:date .
@@ -1864,7 +1853,6 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 ###  https://purl.archive.org/tourism-utilities-ontology#evento_025
 :evento_025 rdf:type owl:NamedIndividual ,
                      schema:Event ;
-            :isOfType :technologicEvent ;
             :takesPlaceIn :Málaga ;
             schema:name "Carnaval Málaga" ;
             schema:startDate "2024-12-24"^^xsd:date .
@@ -1891,7 +1879,6 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 ###  https://purl.archive.org/tourism-utilities-ontology#evento_028
 :evento_028 rdf:type owl:NamedIndividual ,
                      schema:Event ;
-            :isOfType :technologicEvent ;
             :takesPlaceIn :Toledo ;
             schema:name "Festival Toledo" ;
             schema:startDate "2024-12-19"^^xsd:date .
@@ -1927,7 +1914,6 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 ###  https://purl.archive.org/tourism-utilities-ontology#evento_032
 :evento_032 rdf:type owl:NamedIndividual ,
                      schema:Event ;
-            :isOfType :technologicEvent ;
             :takesPlaceIn :Pamplona ;
             schema:name "Concierto Pamplona" ;
             schema:startDate "2024-07-04"^^xsd:date .
@@ -2161,7 +2147,6 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 ###  https://purl.archive.org/tourism-utilities-ontology#evento_058
 :evento_058 rdf:type owl:NamedIndividual ,
                      schema:Event ;
-            :isOfType :technologicEvent ;
             :takesPlaceIn :Sevilla ;
             schema:name "Carnaval Sevilla" ;
             schema:startDate "2024-03-09"^^xsd:date .
@@ -2170,7 +2155,6 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 ###  https://purl.archive.org/tourism-utilities-ontology#evento_059
 :evento_059 rdf:type owl:NamedIndividual ,
                      schema:Event ;
-            :isOfType :technologicEvent ;
             :takesPlaceIn :Málaga ;
             schema:name "Festival Málaga" ;
             schema:startDate "2024-03-11"^^xsd:date .
@@ -2413,7 +2397,6 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 ###  https://purl.archive.org/tourism-utilities-ontology#evento_086
 :evento_086 rdf:type owl:NamedIndividual ,
                      schema:Event ;
-            :isOfType :technologicEvent ;
             :takesPlaceIn :Toledo ;
             schema:name "Feria Toledo" ;
             schema:startDate "2024-12-18"^^xsd:date .
@@ -2476,7 +2459,6 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 ###  https://purl.archive.org/tourism-utilities-ontology#evento_093
 :evento_093 rdf:type owl:NamedIndividual ,
                      schema:Event ;
-            :isOfType :technologicEvent ;
             :takesPlaceIn :Cádiz ;
             schema:name "Concierto Cádiz" ;
             schema:startDate "2024-05-15"^^xsd:date .
@@ -3680,6 +3662,1006 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
                         :TransportType .
 
 
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_001
+:restaurant_001 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Toledo ;
+                schema:name "Restaurante Tradición Toledo" ;
+                schema:servesCuisine "Mexicana" ;
+                :averagePrice "46.0"^^xsd:double ;
+                :userRating "3.7"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_002
+:restaurant_002 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Madrid ;
+                schema:name "Restaurante Gourmet Madrid" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "30.0"^^xsd:double ;
+                :userRating "4.8"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_003
+:restaurant_003 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Valencia ;
+                schema:name "Restaurante Fusión Valencia" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "13.0"^^xsd:double ;
+                :userRating "4.2"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_004
+:restaurant_004 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Málaga ;
+                schema:name "Restaurante Delicia Málaga" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "38.0"^^xsd:double ;
+                :userRating "4.9"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_005
+:restaurant_005 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Pamplona ;
+                schema:name "Restaurante Delicia Pamplona" ;
+                schema:servesCuisine "Mexicana" ;
+                :averagePrice "36.0"^^xsd:double ;
+                :userRating "4.9"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_006
+:restaurant_006 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Sevilla ;
+                schema:name "Restaurante Sabor Sevilla" ;
+                schema:servesCuisine "Italiana" ;
+                :averagePrice "72.0"^^xsd:double ;
+                :userRating "4.1"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_007
+:restaurant_007 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Zaragoza ;
+                schema:name "Restaurante Gourmet Zaragoza" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "65.0"^^xsd:double ;
+                :userRating "4.5"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_008
+:restaurant_008 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Toledo ;
+                schema:name "Restaurante Gourmet Toledo" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "48.0"^^xsd:double ;
+                :userRating "4.5"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_009
+:restaurant_009 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Málaga ;
+                schema:name "Restaurante Delicia Málaga" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "70.0"^^xsd:double ;
+                :userRating "3.7"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_010
+:restaurant_010 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Cádiz ;
+                schema:name "Restaurante Delicia Cádiz" ;
+                schema:servesCuisine "Mexicana" ;
+                :averagePrice "16.0"^^xsd:double ;
+                :userRating "4.7"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_011
+:restaurant_011 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Madrid ;
+                schema:name "Restaurante Gourmet Madrid" ;
+                schema:servesCuisine "Mediterránea" ;
+                :averagePrice "49.0"^^xsd:double ;
+                :userRating "3.5"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_012
+:restaurant_012 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Cádiz ;
+                schema:name "Restaurante Sabor Cádiz" ;
+                schema:servesCuisine "Mexicana" ;
+                :averagePrice "11.0"^^xsd:double ;
+                :userRating "3.9"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_013
+:restaurant_013 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Zaragoza ;
+                schema:name "Restaurante Delicia Zaragoza" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "77.0"^^xsd:double ;
+                :userRating "4.1"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_014
+:restaurant_014 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Valencia ;
+                schema:name "Restaurante Fusión Valencia" ;
+                schema:servesCuisine "Mexicana" ;
+                :averagePrice "46.0"^^xsd:double ;
+                :userRating "4.2"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_015
+:restaurant_015 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Zaragoza ;
+                schema:name "Restaurante Delicia Zaragoza" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "48.0"^^xsd:double ;
+                :userRating "3.9"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_016
+:restaurant_016 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Pamplona ;
+                schema:name "Restaurante Fusión Pamplona" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "40.0"^^xsd:double ;
+                :userRating "4.1"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_017
+:restaurant_017 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Cádiz ;
+                schema:name "Restaurante Gourmet Cádiz" ;
+                schema:servesCuisine "Italiana" ;
+                :averagePrice "68.0"^^xsd:double ;
+                :userRating "4.3"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_018
+:restaurant_018 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Cádiz ;
+                schema:name "Restaurante Sabor Cádiz" ;
+                schema:servesCuisine "Mexicana" ;
+                :averagePrice "34.0"^^xsd:double ;
+                :userRating "3.6"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_019
+:restaurant_019 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Madrid ;
+                schema:name "Restaurante Fusión Madrid" ;
+                schema:servesCuisine "Italiana" ;
+                :averagePrice "37.0"^^xsd:double ;
+                :userRating "4.8"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_020
+:restaurant_020 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Málaga ;
+                schema:name "Restaurante Gourmet Málaga" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "36.0"^^xsd:double ;
+                :userRating "4.7"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_021
+:restaurant_021 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Madrid ;
+                schema:name "Restaurante Delicia Madrid" ;
+                schema:servesCuisine "Mexicana" ;
+                :averagePrice "16.0"^^xsd:double ;
+                :userRating "4.7"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_022
+:restaurant_022 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Madrid ;
+                schema:name "Restaurante Tradición Madrid" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "30.0"^^xsd:double ;
+                :userRating "4.0"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_023
+:restaurant_023 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Sevilla ;
+                schema:name "Restaurante Fusión Sevilla" ;
+                schema:servesCuisine "Italiana" ;
+                :averagePrice "11.0"^^xsd:double ;
+                :userRating "4.9"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_024
+:restaurant_024 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Sevilla ;
+                schema:name "Restaurante Gourmet Sevilla" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "11.0"^^xsd:double ;
+                :userRating "3.8"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_025
+:restaurant_025 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Sevilla ;
+                schema:name "Restaurante Fusión Sevilla" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "60.0"^^xsd:double ;
+                :userRating "3.7"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_026
+:restaurant_026 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Pamplona ;
+                schema:name "Restaurante Gourmet Pamplona" ;
+                schema:servesCuisine "Italiana" ;
+                :averagePrice "32.0"^^xsd:double ;
+                :userRating "4.4"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_027
+:restaurant_027 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :SanSebastián ;
+                schema:name "Restaurante Tradición San Sebastián" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "45.0"^^xsd:double ;
+                :userRating "5.0"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_028
+:restaurant_028 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Cádiz ;
+                schema:name "Restaurante Fusión Cádiz" ;
+                schema:servesCuisine "Mexicana" ;
+                :averagePrice "18.0"^^xsd:double ;
+                :userRating "4.8"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_029
+:restaurant_029 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Valencia ;
+                schema:name "Restaurante Delicia Valencia" ;
+                schema:servesCuisine "Mediterránea" ;
+                :averagePrice "61.0"^^xsd:double ;
+                :userRating "3.7"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_030
+:restaurant_030 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Pamplona ;
+                schema:name "Restaurante Delicia Pamplona" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "42.0"^^xsd:double ;
+                :userRating "3.6"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_031
+:restaurant_031 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Madrid ;
+                schema:name "Restaurante Tradición Madrid" ;
+                schema:servesCuisine "Italiana" ;
+                :averagePrice "75.0"^^xsd:double ;
+                :userRating "4.8"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_032
+:restaurant_032 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Madrid ;
+                schema:name "Restaurante Gourmet Madrid" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "46.0"^^xsd:double ;
+                :userRating "3.8"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_033
+:restaurant_033 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Toledo ;
+                schema:name "Restaurante Tradición Toledo" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "38.0"^^xsd:double ;
+                :userRating "4.8"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_034
+:restaurant_034 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Sevilla ;
+                schema:name "Restaurante Delicia Sevilla" ;
+                schema:servesCuisine "Mexicana" ;
+                :averagePrice "43.0"^^xsd:double ;
+                :userRating "4.9"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_035
+:restaurant_035 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :SanSebastián ;
+                schema:name "Restaurante Delicia San Sebastián" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "56.0"^^xsd:double ;
+                :userRating "3.5"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_036
+:restaurant_036 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Zaragoza ;
+                schema:name "Restaurante Fusión Zaragoza" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "77.0"^^xsd:double ;
+                :userRating "3.9"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_037
+:restaurant_037 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Valencia ;
+                schema:name "Restaurante Sabor Valencia" ;
+                schema:servesCuisine "Mediterránea" ;
+                :averagePrice "28.0"^^xsd:double ;
+                :userRating "4.2"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_038
+:restaurant_038 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Pamplona ;
+                schema:name "Restaurante Delicia Pamplona" ;
+                schema:servesCuisine "Italiana" ;
+                :averagePrice "41.0"^^xsd:double ;
+                :userRating "4.3"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_039
+:restaurant_039 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Toledo ;
+                schema:name "Restaurante Fusión Toledo" ;
+                schema:servesCuisine "Mexicana" ;
+                :averagePrice "70.0"^^xsd:double ;
+                :userRating "4.0"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_040
+:restaurant_040 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Valencia ;
+                schema:name "Restaurante Gourmet Valencia" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "59.0"^^xsd:double ;
+                :userRating "4.6"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_041
+:restaurant_041 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Zaragoza ;
+                schema:name "Restaurante Tradición Zaragoza" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "56.0"^^xsd:double ;
+                :userRating "4.4"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_042
+:restaurant_042 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Sevilla ;
+                schema:name "Restaurante Tradición Sevilla" ;
+                schema:servesCuisine "Italiana" ;
+                :averagePrice "15.0"^^xsd:double ;
+                :userRating "4.5"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_043
+:restaurant_043 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Barcelona ;
+                schema:name "Restaurante Fusión Barcelona" ;
+                schema:servesCuisine "Mexicana" ;
+                :averagePrice "43.0"^^xsd:double ;
+                :userRating "3.8"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_044
+:restaurant_044 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Málaga ;
+                schema:name "Restaurante Gourmet Málaga" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "38.0"^^xsd:double ;
+                :userRating "4.7"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_045
+:restaurant_045 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Zaragoza ;
+                schema:name "Restaurante Fusión Zaragoza" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "41.0"^^xsd:double ;
+                :userRating "5.0"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_046
+:restaurant_046 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Málaga ;
+                schema:name "Restaurante Sabor Málaga" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "56.0"^^xsd:double ;
+                :userRating "4.7"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_047
+:restaurant_047 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :SanSebastián ;
+                schema:name "Restaurante Tradición San Sebastián" ;
+                schema:servesCuisine "Italiana" ;
+                :averagePrice "61.0"^^xsd:double ;
+                :userRating "5.0"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_048
+:restaurant_048 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :SanSebastián ;
+                schema:name "Restaurante Sabor San Sebastián" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "39.0"^^xsd:double ;
+                :userRating "4.9"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_049
+:restaurant_049 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Málaga ;
+                schema:name "Restaurante Sabor Málaga" ;
+                schema:servesCuisine "Mediterránea" ;
+                :averagePrice "43.0"^^xsd:double ;
+                :userRating "4.4"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_050
+:restaurant_050 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Barcelona ;
+                schema:name "Restaurante Delicia Barcelona" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "65.0"^^xsd:double ;
+                :userRating "4.5"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_051
+:restaurant_051 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Sevilla ;
+                schema:name "Restaurante Delicia Sevilla" ;
+                schema:servesCuisine "Italiana" ;
+                :averagePrice "66.0"^^xsd:double ;
+                :userRating "3.7"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_052
+:restaurant_052 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Zaragoza ;
+                schema:name "Restaurante Delicia Zaragoza" ;
+                schema:servesCuisine "Mexicana" ;
+                :averagePrice "21.0"^^xsd:double ;
+                :userRating "4.3"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_053
+:restaurant_053 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Cádiz ;
+                schema:name "Restaurante Delicia Cádiz" ;
+                schema:servesCuisine "Mediterránea" ;
+                :averagePrice "26.0"^^xsd:double ;
+                :userRating "4.7"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_054
+:restaurant_054 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Sevilla ;
+                schema:name "Restaurante Sabor Sevilla" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "80.0"^^xsd:double ;
+                :userRating "4.4"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_055
+:restaurant_055 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Málaga ;
+                schema:name "Restaurante Fusión Málaga" ;
+                schema:servesCuisine "Mexicana" ;
+                :averagePrice "11.0"^^xsd:double ;
+                :userRating "4.7"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_056
+:restaurant_056 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Madrid ;
+                schema:name "Restaurante Tradición Madrid" ;
+                schema:servesCuisine "Mediterránea" ;
+                :averagePrice "59.0"^^xsd:double ;
+                :userRating "4.0"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_057
+:restaurant_057 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Málaga ;
+                schema:name "Restaurante Gourmet Málaga" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "55.0"^^xsd:double ;
+                :userRating "4.8"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_058
+:restaurant_058 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Zaragoza ;
+                schema:name "Restaurante Delicia Zaragoza" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "38.0"^^xsd:double ;
+                :userRating "4.5"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_059
+:restaurant_059 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Cádiz ;
+                schema:name "Restaurante Fusión Cádiz" ;
+                schema:servesCuisine "Mexicana" ;
+                :averagePrice "57.0"^^xsd:double ;
+                :userRating "3.6"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_060
+:restaurant_060 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :SanSebastián ;
+                schema:name "Restaurante Delicia San Sebastián" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "19.0"^^xsd:double ;
+                :userRating "3.6"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_061
+:restaurant_061 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Madrid ;
+                schema:name "Restaurante Gourmet Madrid" ;
+                schema:servesCuisine "Mediterránea" ;
+                :averagePrice "76.0"^^xsd:double ;
+                :userRating "4.4"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_062
+:restaurant_062 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :SanSebastián ;
+                schema:name "Restaurante Tradición San Sebastián" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "66.0"^^xsd:double ;
+                :userRating "3.7"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_063
+:restaurant_063 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Cádiz ;
+                schema:name "Restaurante Tradición Cádiz" ;
+                schema:servesCuisine "Italiana" ;
+                :averagePrice "41.0"^^xsd:double ;
+                :userRating "4.0"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_064
+:restaurant_064 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Málaga ;
+                schema:name "Restaurante Tradición Málaga" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "35.0"^^xsd:double ;
+                :userRating "4.1"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_065
+:restaurant_065 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Málaga ;
+                schema:name "Restaurante Gourmet Málaga" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "57.0"^^xsd:double ;
+                :userRating "4.4"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_066
+:restaurant_066 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Barcelona ;
+                schema:name "Restaurante Fusión Barcelona" ;
+                schema:servesCuisine "Mediterránea" ;
+                :averagePrice "51.0"^^xsd:double ;
+                :userRating "4.2"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_067
+:restaurant_067 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Toledo ;
+                schema:name "Restaurante Fusión Toledo" ;
+                schema:servesCuisine "Italiana" ;
+                :averagePrice "74.0"^^xsd:double ;
+                :userRating "4.1"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_068
+:restaurant_068 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Barcelona ;
+                schema:name "Restaurante Gourmet Barcelona" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "68.0"^^xsd:double ;
+                :userRating "4.9"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_069
+:restaurant_069 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Barcelona ;
+                schema:name "Restaurante Gourmet Barcelona" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "39.0"^^xsd:double ;
+                :userRating "3.8"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_070
+:restaurant_070 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Zaragoza ;
+                schema:name "Restaurante Fusión Zaragoza" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "64.0"^^xsd:double ;
+                :userRating "4.0"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_071
+:restaurant_071 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Cádiz ;
+                schema:name "Restaurante Tradición Cádiz" ;
+                schema:servesCuisine "Mediterránea" ;
+                :averagePrice "53.0"^^xsd:double ;
+                :userRating "3.9"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_072
+:restaurant_072 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Bilbao ;
+                schema:name "Restaurante Fusión Bilbao" ;
+                schema:servesCuisine "Mexicana" ;
+                :averagePrice "46.0"^^xsd:double ;
+                :userRating "5.0"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_073
+:restaurant_073 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Valencia ;
+                schema:name "Restaurante Gourmet Valencia" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "38.0"^^xsd:double ;
+                :userRating "4.9"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_074
+:restaurant_074 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Pamplona ;
+                schema:name "Restaurante Gourmet Pamplona" ;
+                schema:servesCuisine "Italiana" ;
+                :averagePrice "12.0"^^xsd:double ;
+                :userRating "4.2"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_075
+:restaurant_075 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Sevilla ;
+                schema:name "Restaurante Sabor Sevilla" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "48.0"^^xsd:double ;
+                :userRating "4.0"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_076
+:restaurant_076 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Valencia ;
+                schema:name "Restaurante Fusión Valencia" ;
+                schema:servesCuisine "Mexicana" ;
+                :averagePrice "19.0"^^xsd:double ;
+                :userRating "3.6"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_077
+:restaurant_077 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Sevilla ;
+                schema:name "Restaurante Delicia Sevilla" ;
+                schema:servesCuisine "Mediterránea" ;
+                :averagePrice "75.0"^^xsd:double ;
+                :userRating "4.2"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_078
+:restaurant_078 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Valencia ;
+                schema:name "Restaurante Fusión Valencia" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "59.0"^^xsd:double ;
+                :userRating "4.3"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_079
+:restaurant_079 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Málaga ;
+                schema:name "Restaurante Sabor Málaga" ;
+                schema:servesCuisine "Italiana" ;
+                :averagePrice "78.0"^^xsd:double ;
+                :userRating "3.8"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_080
+:restaurant_080 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Pamplona ;
+                schema:name "Restaurante Gourmet Pamplona" ;
+                schema:servesCuisine "Mediterránea" ;
+                :averagePrice "78.0"^^xsd:double ;
+                :userRating "3.5"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_081
+:restaurant_081 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :SanSebastián ;
+                schema:name "Restaurante Gourmet San Sebastián" ;
+                schema:servesCuisine "Mexicana" ;
+                :averagePrice "74.0"^^xsd:double ;
+                :userRating "3.7"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_082
+:restaurant_082 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Madrid ;
+                schema:name "Restaurante Gourmet Madrid" ;
+                schema:servesCuisine "Mexicana" ;
+                :averagePrice "30.0"^^xsd:double ;
+                :userRating "4.7"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_083
+:restaurant_083 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Bilbao ;
+                schema:name "Restaurante Delicia Bilbao" ;
+                schema:servesCuisine "Italiana" ;
+                :averagePrice "66.0"^^xsd:double ;
+                :userRating "4.4"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_084
+:restaurant_084 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Pamplona ;
+                schema:name "Restaurante Fusión Pamplona" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "15.0"^^xsd:double ;
+                :userRating "4.2"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_085
+:restaurant_085 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Madrid ;
+                schema:name "Restaurante Fusión Madrid" ;
+                schema:servesCuisine "Italiana" ;
+                :averagePrice "43.0"^^xsd:double ;
+                :userRating "4.6"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_086
+:restaurant_086 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Cádiz ;
+                schema:name "Restaurante Fusión Cádiz" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "25.0"^^xsd:double ;
+                :userRating "4.0"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_087
+:restaurant_087 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Valencia ;
+                schema:name "Restaurante Sabor Valencia" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "21.0"^^xsd:double ;
+                :userRating "3.6"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_088
+:restaurant_088 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Barcelona ;
+                schema:name "Restaurante Fusión Barcelona" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "15.0"^^xsd:double ;
+                :userRating "5.0"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_089
+:restaurant_089 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Málaga ;
+                schema:name "Restaurante Gourmet Málaga" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "28.0"^^xsd:double ;
+                :userRating "4.3"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_090
+:restaurant_090 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Zaragoza ;
+                schema:name "Restaurante Delicia Zaragoza" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "74.0"^^xsd:double ;
+                :userRating "4.6"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_091
+:restaurant_091 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Zaragoza ;
+                schema:name "Restaurante Gourmet Zaragoza" ;
+                schema:servesCuisine "Mediterránea" ;
+                :averagePrice "27.0"^^xsd:double ;
+                :userRating "4.6"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_092
+:restaurant_092 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Pamplona ;
+                schema:name "Restaurante Gourmet Pamplona" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "10.0"^^xsd:double ;
+                :userRating "5.0"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_093
+:restaurant_093 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Zaragoza ;
+                schema:name "Restaurante Sabor Zaragoza" ;
+                schema:servesCuisine "Italiana" ;
+                :averagePrice "58.0"^^xsd:double ;
+                :userRating "4.6"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_094
+:restaurant_094 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Sevilla ;
+                schema:name "Restaurante Tradición Sevilla" ;
+                schema:servesCuisine "Mediterránea" ;
+                :averagePrice "66.0"^^xsd:double ;
+                :userRating "4.3"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_095
+:restaurant_095 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Sevilla ;
+                schema:name "Restaurante Tradición Sevilla" ;
+                schema:servesCuisine "Mexicana" ;
+                :averagePrice "80.0"^^xsd:double ;
+                :userRating "3.8"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_096
+:restaurant_096 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Madrid ;
+                schema:name "Restaurante Tradición Madrid" ;
+                schema:servesCuisine "Japonesa" ;
+                :averagePrice "38.0"^^xsd:double ;
+                :userRating "4.2"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_097
+:restaurant_097 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Zaragoza ;
+                schema:name "Restaurante Fusión Zaragoza" ;
+                schema:servesCuisine "Italiana" ;
+                :averagePrice "54.0"^^xsd:double ;
+                :userRating "4.7"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_098
+:restaurant_098 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Sevilla ;
+                schema:name "Restaurante Delicia Sevilla" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "70.0"^^xsd:double ;
+                :userRating "4.0"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_099
+:restaurant_099 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Valencia ;
+                schema:name "Restaurante Gourmet Valencia" ;
+                schema:servesCuisine "Andaluza" ;
+                :averagePrice "48.0"^^xsd:double ;
+                :userRating "3.8"^^xsd:double .
+
+
+###  https://purl.archive.org/tourism-utilities-ontology#restaurant_100
+:restaurant_100 rdf:type owl:NamedIndividual ,
+                         :Restaurant ;
+                :locatedIn :Toledo ;
+                schema:name "Restaurante Gourmet Toledo" ;
+                schema:servesCuisine "Italiana" ;
+                :averagePrice "19.0"^^xsd:double ;
+                :userRating "4.2"^^xsd:double .
+
+
 ###  https://purl.archive.org/tourism-utilities-ontology#ruralHotel
 :ruralHotel rdf:type owl:NamedIndividual ,
                      :HotelType .
@@ -3695,13 +4677,9 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
                :TransportType .
 
 
-###  https://purl.archive.org/tourism-utilities-ontology#technologicEvent
-:technologicEvent rdf:type owl:NamedIndividual ,
-                           :EventType .
-
-
 ###  https://purl.archive.org/tourism-utilities-ontology#technologicalEvent
-:technologicalEvent rdf:type owl:NamedIndividual .
+:technologicalEvent rdf:type owl:NamedIndividual ,
+                             :EventType .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#touristicHotel
@@ -3715,7 +4693,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_001
-:transport_001 rdf:type owl:NamedIndividual ;
+:transport_001 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanMadrid ;
                :isOfType :underground ;
                :locatedIn :Madrid ;
@@ -3723,7 +4702,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_002
-:transport_002 rdf:type owl:NamedIndividual ;
+:transport_002 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :TransBilbao ;
                :isOfType :taxi ;
                :locatedIn :Bilbao ;
@@ -3731,7 +4711,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_003
-:transport_003 rdf:type owl:NamedIndividual ;
+:transport_003 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :TransToledo ;
                :isOfType :tram ;
                :locatedIn :Toledo ;
@@ -3739,7 +4720,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_004
-:transport_004 rdf:type owl:NamedIndividual ;
+:transport_004 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :CityZaragoza ;
                :isOfType :bus ;
                :locatedIn :Zaragoza ;
@@ -3747,7 +4729,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_005
-:transport_005 rdf:type owl:NamedIndividual ;
+:transport_005 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MoviCádiz ;
                :isOfType :underground ;
                :locatedIn :Cádiz ;
@@ -3755,7 +4738,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_006
-:transport_006 rdf:type owl:NamedIndividual ;
+:transport_006 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :TransPamplona ;
                :isOfType :publicBicycle ;
                :locatedIn :Pamplona ;
@@ -3763,7 +4747,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_007
-:transport_007 rdf:type owl:NamedIndividual ;
+:transport_007 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroCádiz ;
                :isOfType :taxi ;
                :locatedIn :Cádiz ;
@@ -3771,7 +4756,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_008
-:transport_008 rdf:type owl:NamedIndividual ;
+:transport_008 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :CityMadrid ;
                :isOfType :publicBicycle ;
                :locatedIn :Madrid ;
@@ -3779,7 +4765,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_009
-:transport_009 rdf:type owl:NamedIndividual ;
+:transport_009 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroBarcelona ;
                :isOfType :bus ;
                :locatedIn :Barcelona ;
@@ -3787,7 +4774,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_010
-:transport_010 rdf:type owl:NamedIndividual ;
+:transport_010 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :TransSevilla ;
                :isOfType :bus ;
                :locatedIn :Sevilla ;
@@ -3795,7 +4783,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_011
-:transport_011 rdf:type owl:NamedIndividual ;
+:transport_011 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :TransValencia ;
                :isOfType :tram ;
                :locatedIn :Valencia ;
@@ -3803,7 +4792,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_012
-:transport_012 rdf:type owl:NamedIndividual ;
+:transport_012 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :CitySevilla ;
                :isOfType :bus ;
                :locatedIn :Sevilla ;
@@ -3811,7 +4801,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_013
-:transport_013 rdf:type owl:NamedIndividual ;
+:transport_013 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :CityCádiz ;
                :isOfType :underground ;
                :locatedIn :Cádiz ;
@@ -3819,7 +4810,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_014
-:transport_014 rdf:type owl:NamedIndividual ;
+:transport_014 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MoviPamplona ;
                :isOfType :taxi ;
                :locatedIn :Pamplona ;
@@ -3827,7 +4819,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_015
-:transport_015 rdf:type owl:NamedIndividual ;
+:transport_015 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MoviCádiz ;
                :isOfType :tram ;
                :locatedIn :Cádiz ;
@@ -3835,7 +4828,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_016
-:transport_016 rdf:type owl:NamedIndividual ;
+:transport_016 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :CityMálaga ;
                :isOfType :tram ;
                :locatedIn :Málaga ;
@@ -3843,7 +4837,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_017
-:transport_017 rdf:type owl:NamedIndividual ;
+:transport_017 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanBilbao ;
                :isOfType :publicBicycle ;
                :locatedIn :Bilbao ;
@@ -3851,7 +4846,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_018
-:transport_018 rdf:type owl:NamedIndividual ;
+:transport_018 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroBilbao ;
                :isOfType :underground ;
                :locatedIn :Bilbao ;
@@ -3859,7 +4855,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_019
-:transport_019 rdf:type owl:NamedIndividual ;
+:transport_019 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :CityBilbao ;
                :isOfType :bus ;
                :locatedIn :Bilbao ;
@@ -3867,7 +4864,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_020
-:transport_020 rdf:type owl:NamedIndividual ;
+:transport_020 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MoviBilbao ;
                :isOfType :taxi ;
                :locatedIn :Bilbao ;
@@ -3875,7 +4873,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_021
-:transport_021 rdf:type owl:NamedIndividual ;
+:transport_021 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :CityPamplona ;
                :isOfType :underground ;
                :locatedIn :Pamplona ;
@@ -3883,7 +4882,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_022
-:transport_022 rdf:type owl:NamedIndividual ;
+:transport_022 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanZaragoza ;
                :isOfType :tram ;
                :locatedIn :Zaragoza ;
@@ -3891,7 +4891,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_023
-:transport_023 rdf:type owl:NamedIndividual ;
+:transport_023 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MoviPamplona ;
                :isOfType :publicBicycle ;
                :locatedIn :Pamplona ;
@@ -3899,7 +4900,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_024
-:transport_024 rdf:type owl:NamedIndividual ;
+:transport_024 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanValencia ;
                :isOfType :bus ;
                :locatedIn :Valencia ;
@@ -3907,7 +4909,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_025
-:transport_025 rdf:type owl:NamedIndividual ;
+:transport_025 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroZaragoza ;
                :isOfType :taxi ;
                :locatedIn :Zaragoza ;
@@ -3915,7 +4918,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_026
-:transport_026 rdf:type owl:NamedIndividual ;
+:transport_026 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroPamplona ;
                :isOfType :bus ;
                :locatedIn :Pamplona ;
@@ -3923,7 +4927,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_027
-:transport_027 rdf:type owl:NamedIndividual ;
+:transport_027 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanBarcelona ;
                :isOfType :bus ;
                :locatedIn :Barcelona ;
@@ -3931,7 +4936,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_028
-:transport_028 rdf:type owl:NamedIndividual ;
+:transport_028 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanPamplona ;
                :isOfType :tram ;
                :locatedIn :Pamplona ;
@@ -3939,7 +4945,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_029
-:transport_029 rdf:type owl:NamedIndividual ;
+:transport_029 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroSanSebastián ;
                :isOfType :tram ;
                :locatedIn :SanSebastián ;
@@ -3947,7 +4954,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_030
-:transport_030 rdf:type owl:NamedIndividual ;
+:transport_030 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanMálaga ;
                :isOfType :taxi ;
                :locatedIn :Málaga ;
@@ -3955,7 +4963,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_031
-:transport_031 rdf:type owl:NamedIndividual ;
+:transport_031 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanSanSebastián ;
                :isOfType :taxi ;
                :locatedIn :SanSebastián ;
@@ -3963,7 +4972,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_032
-:transport_032 rdf:type owl:NamedIndividual ;
+:transport_032 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroMadrid ;
                :isOfType :bus ;
                :locatedIn :Madrid ;
@@ -3971,7 +4981,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_033
-:transport_033 rdf:type owl:NamedIndividual ;
+:transport_033 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroMadrid ;
                :isOfType :bus ;
                :locatedIn :Madrid ;
@@ -3979,7 +4990,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_034
-:transport_034 rdf:type owl:NamedIndividual ;
+:transport_034 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanSanSebastián ;
                :isOfType :bus ;
                :locatedIn :SanSebastián ;
@@ -3987,7 +4999,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_035
-:transport_035 rdf:type owl:NamedIndividual ;
+:transport_035 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroBilbao ;
                :isOfType :taxi ;
                :locatedIn :Bilbao ;
@@ -3995,7 +5008,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_036
-:transport_036 rdf:type owl:NamedIndividual ;
+:transport_036 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :CityBarcelona ;
                :isOfType :bus ;
                :locatedIn :Barcelona ;
@@ -4003,7 +5017,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_037
-:transport_037 rdf:type owl:NamedIndividual ;
+:transport_037 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :TransMálaga ;
                :isOfType :underground ;
                :locatedIn :Málaga ;
@@ -4011,7 +5026,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_038
-:transport_038 rdf:type owl:NamedIndividual ;
+:transport_038 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MoviMadrid ;
                :isOfType :tram ;
                :locatedIn :Madrid ;
@@ -4019,7 +5035,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_039
-:transport_039 rdf:type owl:NamedIndividual ;
+:transport_039 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MoviSevilla ;
                :isOfType :taxi ;
                :locatedIn :Sevilla ;
@@ -4027,7 +5044,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_040
-:transport_040 rdf:type owl:NamedIndividual ;
+:transport_040 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanToledo ;
                :isOfType :underground ;
                :locatedIn :Toledo ;
@@ -4035,7 +5053,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_041
-:transport_041 rdf:type owl:NamedIndividual ;
+:transport_041 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroBarcelona ;
                :isOfType :taxi ;
                :locatedIn :Barcelona ;
@@ -4043,7 +5062,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_042
-:transport_042 rdf:type owl:NamedIndividual ;
+:transport_042 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanSevilla ;
                :isOfType :bus ;
                :locatedIn :Sevilla ;
@@ -4051,7 +5071,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_043
-:transport_043 rdf:type owl:NamedIndividual ;
+:transport_043 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :CityPamplona ;
                :isOfType :underground ;
                :locatedIn :Pamplona ;
@@ -4059,7 +5080,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_044
-:transport_044 rdf:type owl:NamedIndividual ;
+:transport_044 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MoviSanSebastián ;
                :isOfType :underground ;
                :locatedIn :SanSebastián ;
@@ -4067,7 +5089,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_045
-:transport_045 rdf:type owl:NamedIndividual ;
+:transport_045 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroPamplona ;
                :isOfType :publicBicycle ;
                :locatedIn :Pamplona ;
@@ -4075,7 +5098,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_046
-:transport_046 rdf:type owl:NamedIndividual ;
+:transport_046 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroPamplona ;
                :isOfType :taxi ;
                :locatedIn :Pamplona ;
@@ -4083,7 +5107,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_047
-:transport_047 rdf:type owl:NamedIndividual ;
+:transport_047 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MoviSanSebastián ;
                :isOfType :taxi ;
                :locatedIn :SanSebastián ;
@@ -4091,7 +5116,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_048
-:transport_048 rdf:type owl:NamedIndividual ;
+:transport_048 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MoviToledo ;
                :isOfType :tram ;
                :locatedIn :Toledo ;
@@ -4099,7 +5125,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_049
-:transport_049 rdf:type owl:NamedIndividual ;
+:transport_049 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :CityMadrid ;
                :isOfType :underground ;
                :locatedIn :Madrid ;
@@ -4107,7 +5134,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_050
-:transport_050 rdf:type owl:NamedIndividual ;
+:transport_050 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanZaragoza ;
                :isOfType :bus ;
                :locatedIn :Zaragoza ;
@@ -4115,7 +5143,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_051
-:transport_051 rdf:type owl:NamedIndividual ;
+:transport_051 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanMadrid ;
                :isOfType :bus ;
                :locatedIn :Madrid ;
@@ -4123,7 +5152,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_052
-:transport_052 rdf:type owl:NamedIndividual ;
+:transport_052 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :TransMadrid ;
                :isOfType :taxi ;
                :locatedIn :Madrid ;
@@ -4131,7 +5161,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_053
-:transport_053 rdf:type owl:NamedIndividual ;
+:transport_053 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanToledo ;
                :isOfType :underground ;
                :locatedIn :Toledo ;
@@ -4139,7 +5170,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_054
-:transport_054 rdf:type owl:NamedIndividual ;
+:transport_054 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroMálaga ;
                :isOfType :taxi ;
                :locatedIn :Málaga ;
@@ -4147,7 +5179,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_055
-:transport_055 rdf:type owl:NamedIndividual ;
+:transport_055 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MoviToledo ;
                :isOfType :tram ;
                :locatedIn :Toledo ;
@@ -4155,7 +5188,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_056
-:transport_056 rdf:type owl:NamedIndividual ;
+:transport_056 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :TransValencia ;
                :isOfType :taxi ;
                :locatedIn :Valencia ;
@@ -4163,7 +5197,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_057
-:transport_057 rdf:type owl:NamedIndividual ;
+:transport_057 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MoviValencia ;
                :isOfType :bus ;
                :locatedIn :Valencia ;
@@ -4171,7 +5206,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_058
-:transport_058 rdf:type owl:NamedIndividual ;
+:transport_058 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MoviPamplona ;
                :isOfType :publicBicycle ;
                :locatedIn :Pamplona ;
@@ -4179,7 +5215,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_059
-:transport_059 rdf:type owl:NamedIndividual ;
+:transport_059 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroSanSebastián ;
                :isOfType :tram ;
                :locatedIn :SanSebastián ;
@@ -4187,7 +5224,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_060
-:transport_060 rdf:type owl:NamedIndividual ;
+:transport_060 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanMadrid ;
                :isOfType :underground ;
                :locatedIn :Madrid ;
@@ -4195,7 +5233,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_061
-:transport_061 rdf:type owl:NamedIndividual ;
+:transport_061 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroBilbao ;
                :isOfType :underground ;
                :locatedIn :Bilbao ;
@@ -4203,7 +5242,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_062
-:transport_062 rdf:type owl:NamedIndividual ;
+:transport_062 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :CityCádiz ;
                :isOfType :publicBicycle ;
                :locatedIn :Cádiz ;
@@ -4211,7 +5251,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_063
-:transport_063 rdf:type owl:NamedIndividual ;
+:transport_063 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroMálaga ;
                :isOfType :taxi ;
                :locatedIn :Málaga ;
@@ -4219,7 +5260,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_064
-:transport_064 rdf:type owl:NamedIndividual ;
+:transport_064 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :CityBarcelona ;
                :isOfType :taxi ;
                :locatedIn :Barcelona ;
@@ -4227,7 +5269,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_065
-:transport_065 rdf:type owl:NamedIndividual ;
+:transport_065 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanPamplona ;
                :isOfType :bus ;
                :locatedIn :Pamplona ;
@@ -4235,7 +5278,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_066
-:transport_066 rdf:type owl:NamedIndividual ;
+:transport_066 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroSevilla ;
                :isOfType :publicBicycle ;
                :locatedIn :Sevilla ;
@@ -4243,7 +5287,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_067
-:transport_067 rdf:type owl:NamedIndividual ;
+:transport_067 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroToledo ;
                :isOfType :taxi ;
                :locatedIn :Toledo ;
@@ -4251,7 +5296,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_068
-:transport_068 rdf:type owl:NamedIndividual ;
+:transport_068 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :TransMálaga ;
                :isOfType :tram ;
                :locatedIn :Málaga ;
@@ -4259,7 +5305,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_069
-:transport_069 rdf:type owl:NamedIndividual ;
+:transport_069 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroPamplona ;
                :isOfType :tram ;
                :locatedIn :Pamplona ;
@@ -4267,7 +5314,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_070
-:transport_070 rdf:type owl:NamedIndividual ;
+:transport_070 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanBilbao ;
                :isOfType :publicBicycle ;
                :locatedIn :Bilbao ;
@@ -4275,7 +5323,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_071
-:transport_071 rdf:type owl:NamedIndividual ;
+:transport_071 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MoviBarcelona ;
                :isOfType :publicBicycle ;
                :locatedIn :Barcelona ;
@@ -4283,7 +5332,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_072
-:transport_072 rdf:type owl:NamedIndividual ;
+:transport_072 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanSevilla ;
                :isOfType :taxi ;
                :locatedIn :Sevilla ;
@@ -4291,7 +5341,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_073
-:transport_073 rdf:type owl:NamedIndividual ;
+:transport_073 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :TransCádiz ;
                :isOfType :tram ;
                :locatedIn :Cádiz ;
@@ -4299,7 +5350,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_074
-:transport_074 rdf:type owl:NamedIndividual ;
+:transport_074 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanSevilla ;
                :isOfType :publicBicycle ;
                :locatedIn :Sevilla ;
@@ -4307,7 +5359,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_075
-:transport_075 rdf:type owl:NamedIndividual ;
+:transport_075 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroPamplona ;
                :isOfType :bus ;
                :locatedIn :Pamplona ;
@@ -4315,7 +5368,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_076
-:transport_076 rdf:type owl:NamedIndividual ;
+:transport_076 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :CityMadrid ;
                :isOfType :taxi ;
                :locatedIn :Madrid ;
@@ -4323,7 +5377,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_077
-:transport_077 rdf:type owl:NamedIndividual ;
+:transport_077 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroMadrid ;
                :isOfType :tram ;
                :locatedIn :Madrid ;
@@ -4331,7 +5386,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_078
-:transport_078 rdf:type owl:NamedIndividual ;
+:transport_078 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MoviBilbao ;
                :isOfType :tram ;
                :locatedIn :Bilbao ;
@@ -4339,7 +5395,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_079
-:transport_079 rdf:type owl:NamedIndividual ;
+:transport_079 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :TransSevilla ;
                :isOfType :tram ;
                :locatedIn :Sevilla ;
@@ -4347,7 +5404,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_080
-:transport_080 rdf:type owl:NamedIndividual ;
+:transport_080 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :TransPamplona ;
                :isOfType :tram ;
                :locatedIn :Pamplona ;
@@ -4355,7 +5413,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_081
-:transport_081 rdf:type owl:NamedIndividual ;
+:transport_081 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :CityBilbao ;
                :isOfType :tram ;
                :locatedIn :Bilbao ;
@@ -4363,7 +5422,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_082
-:transport_082 rdf:type owl:NamedIndividual ;
+:transport_082 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :CityMadrid ;
                :isOfType :publicBicycle ;
                :locatedIn :Madrid ;
@@ -4371,7 +5431,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_083
-:transport_083 rdf:type owl:NamedIndividual ;
+:transport_083 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :CityToledo ;
                :isOfType :tram ;
                :locatedIn :Toledo ;
@@ -4379,7 +5440,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_084
-:transport_084 rdf:type owl:NamedIndividual ;
+:transport_084 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :TransSanSebastián ;
                :isOfType :bus ;
                :locatedIn :SanSebastián ;
@@ -4387,7 +5449,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_085
-:transport_085 rdf:type owl:NamedIndividual ;
+:transport_085 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MoviSevilla ;
                :isOfType :underground ;
                :locatedIn :Sevilla ;
@@ -4395,7 +5458,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_086
-:transport_086 rdf:type owl:NamedIndividual ;
+:transport_086 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :CitySevilla ;
                :isOfType :taxi ;
                :locatedIn :Sevilla ;
@@ -4403,7 +5467,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_087
-:transport_087 rdf:type owl:NamedIndividual ;
+:transport_087 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MoviBarcelona ;
                :isOfType :publicBicycle ;
                :locatedIn :Barcelona ;
@@ -4411,7 +5476,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_088
-:transport_088 rdf:type owl:NamedIndividual ;
+:transport_088 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :TransZaragoza ;
                :isOfType :tram ;
                :locatedIn :Zaragoza ;
@@ -4419,7 +5485,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_089
-:transport_089 rdf:type owl:NamedIndividual ;
+:transport_089 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanValencia ;
                :isOfType :tram ;
                :locatedIn :Valencia ;
@@ -4427,7 +5494,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_090
-:transport_090 rdf:type owl:NamedIndividual ;
+:transport_090 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :CityZaragoza ;
                :isOfType :tram ;
                :locatedIn :Zaragoza ;
@@ -4435,7 +5503,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_091
-:transport_091 rdf:type owl:NamedIndividual ;
+:transport_091 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :UrbanBilbao ;
                :isOfType :taxi ;
                :locatedIn :Bilbao ;
@@ -4443,7 +5512,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_092
-:transport_092 rdf:type owl:NamedIndividual ;
+:transport_092 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroMadrid ;
                :isOfType :bus ;
                :locatedIn :Madrid ;
@@ -4451,7 +5521,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_093
-:transport_093 rdf:type owl:NamedIndividual ;
+:transport_093 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :TransValencia ;
                :isOfType :underground ;
                :locatedIn :Valencia ;
@@ -4459,7 +5530,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_094
-:transport_094 rdf:type owl:NamedIndividual ;
+:transport_094 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MoviMálaga ;
                :isOfType :bus ;
                :locatedIn :Málaga ;
@@ -4467,7 +5539,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_095
-:transport_095 rdf:type owl:NamedIndividual ;
+:transport_095 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :TransMadrid ;
                :isOfType :tram ;
                :locatedIn :Madrid ;
@@ -4475,7 +5548,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_096
-:transport_096 rdf:type owl:NamedIndividual ;
+:transport_096 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :TransZaragoza ;
                :isOfType :publicBicycle ;
                :locatedIn :Zaragoza ;
@@ -4483,7 +5557,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_097
-:transport_097 rdf:type owl:NamedIndividual ;
+:transport_097 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :TransCádiz ;
                :isOfType :publicBicycle ;
                :locatedIn :Cádiz ;
@@ -4491,7 +5566,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_098
-:transport_098 rdf:type owl:NamedIndividual ;
+:transport_098 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :CityPamplona ;
                :isOfType :tram ;
                :locatedIn :Pamplona ;
@@ -4499,7 +5575,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_099
-:transport_099 rdf:type owl:NamedIndividual ;
+:transport_099 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :MetroSanSebastián ;
                :isOfType :taxi ;
                :locatedIn :SanSebastián ;
@@ -4507,7 +5584,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#transport_100
-:transport_100 rdf:type owl:NamedIndividual ;
+:transport_100 rdf:type owl:NamedIndividual ,
+                        :LocalTransportUtility ;
                :isManagedBy :TransPamplona ;
                :isOfType :bus ;
                :locatedIn :Pamplona ;
