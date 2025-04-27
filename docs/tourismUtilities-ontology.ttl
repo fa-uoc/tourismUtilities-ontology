@@ -104,8 +104,9 @@ xsd:date rdf:type rdfs:Datatype .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#isOfType
-:isOfType rdf:type owl:ObjectProperty ,
-                   owl:FunctionalProperty ;
+:isOfType rdf:type owl:ObjectProperty ;
+          owl:inverseOf :isTypeOf ;
+          rdf:type owl:FunctionalProperty ;
           rdfs:domain [ rdf:type owl:Restriction ;
                         owl:onProperty :isOfType ;
                         owl:someValuesFrom schema:Enumeration
@@ -170,9 +171,7 @@ schema:startDate rdf:type owl:DatatypeProperty ;
 
 ###  https://purl.archive.org/tourism-utilities-ontology#averagePrice
 :averagePrice rdf:type owl:DatatypeProperty ;
-              rdfs:subPropertyOf schema:price ;
-              rdfs:domain :LocalTransportUtility ,
-                          :Restaurant .
+              rdfs:subPropertyOf schema:price .
 
 
 ###  https://purl.archive.org/tourism-utilities-ontology#pricePerNight
@@ -189,9 +188,6 @@ schema:startDate rdf:type owl:DatatypeProperty ;
 
 ###  https://purl.archive.org/tourism-utilities-ontology#userRating
 :userRating rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Hotel ,
-                        :Restaurant ,
-                        :TouristicAttraction ;
             rdfs:range xsd:double .
 
 
@@ -235,6 +231,9 @@ schema:Event rdf:type owl:Class ;
 ###  http://schema.org/Hotel
 schema:Hotel rdf:type owl:Class ;
              rdfs:subClassOf :HospitalityUtility ;
+             owl:disjointWith schema:Restaurant ,
+                              :LocalTransportUtility ,
+                              :TouristicAttraction ;
              rdfs:comment "Facility that offers hostelling services which allows independent co-living of hosts." ;
              rdfs:label "Hotel (schema)"@en .
 
@@ -254,6 +253,8 @@ schema:Place rdf:type owl:Class ;
 ###  http://schema.org/Restaurant
 schema:Restaurant rdf:type owl:Class ;
                   rdfs:subClassOf :HospitalityUtility ;
+                  owl:disjointWith :LocalTransportUtility ,
+                                   :TouristicAttraction ;
                   rdfs:comment "Facility that services at-the-moment made food recipes and drinks mainly intended to be consumed in place." ;
                   rdfs:label "Restaurant (schema)"@en .
 
@@ -293,6 +294,8 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 ###  https://purl.archive.org/tourism-utilities-ontology#HospitalityUtility
 :HospitalityUtility rdf:type owl:Class ;
                     rdfs:subClassOf :TouristicResource ;
+                    owl:disjointWith :LocalTransportUtility ,
+                                     :TouristicAttraction ;
                     rdfs:comment "Includes food services and hostelling services" ;
                     rdfs:label "HospitalityUtility"@en .
 
@@ -323,6 +326,7 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 :LocalTransportUtility rdf:type owl:Class ;
                        rdfs:subClassOf :TouristicResource ,
                                        :TransportService ;
+                       owl:disjointWith :TouristicAttraction ;
                        rdfs:comment "Touristic resource that allows or facilitates mobility within an area." ;
                        rdfs:label "TransportUtility"@en .
 
@@ -330,6 +334,7 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 ###  https://purl.archive.org/tourism-utilities-ontology#Restaurant
 :Restaurant rdf:type owl:Class ;
             rdfs:subClassOf schema:Restaurant ;
+            owl:disjointWith :TouristicAttraction ;
             rdfs:comment "See Restaurant (schema). This includes distinct data properties." ;
             rdfs:label "Restaurant (distinct)"@en .
 
@@ -5706,9 +5711,9 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hosts ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#Y> ;
-                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#X>
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :takesPlaceIn ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#Y>
                                                      ] ;
                                            rdf:rest rdf:nil
                                          ]
@@ -5725,9 +5730,9 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
                                          ] ;
    <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
                                            rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
-                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :locatedIn ;
-                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
-                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#Y>
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hosts ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#Y> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#X>
                                                      ] ;
                                            rdf:rest rdf:nil
                                          ]
