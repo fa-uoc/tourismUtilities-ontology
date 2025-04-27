@@ -1,0 +1,1 @@
+This ontology describes the tourist utilities of 11 spanish cities in order to help event planning and management. It has been produced as a practical assignment for the subject Knowledge Representation in Computer Science at Universitat Oberta de Catalunya.
