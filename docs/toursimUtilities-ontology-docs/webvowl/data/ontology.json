@@ -1,0 +1,4470 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://schema.org", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "https://purl.archive.org/tourism-utilities-ontology", "http://dbpedia.org/property" ],
+    "title" : {
+      "undefined" : "Tourism Utilities"
+    },
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#",
+    "author" : [ "famorn  A T  uoc.edu" ],
+    "description" : {
+      "undefined" : "This ontology describes the tourist utilities of 11 spanish cities in order to help event planning and management. It has been produced as a practical assignment for the subject Knowledge Representation in Computer Science at Universitat Oberta de Catalunya."
+    },
+    "labels" : {
+      "en" : "Tourism Utilities"
+    },
+    "other" : {
+      "image" : [ {
+        "identifier" : "image",
+        "language" : "undefined",
+        "value" : "https://purl.archive.org/tourism-utilities-ontology/img",
+        "type" : "label"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "https://creativecommons.org/licenses/by/4.0/",
+        "type" : "label"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "famorn  A T  uoc.edu",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-04-27",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "tour",
+        "type" : "label"
+      }, {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Tourism Utilities",
+        "type" : "label"
+      } ],
+      "issued" : [ {
+        "identifier" : "issued",
+        "language" : "undefined",
+        "value" : "2025-04-27",
+        "type" : "label"
+      } ],
+      "status" : [ {
+        "identifier" : "status",
+        "language" : "undefined",
+        "value" : "Awaiting feedback and corrections.",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "12",
+    "type" : "owl:Class"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "41",
+    "type" : "owl:Class"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "35",
+    "type" : "owl:Class"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "5",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "42",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "26",
+    "type" : "owl:Class"
+  }, {
+    "id" : "64",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "21",
+    "type" : "owl:Class"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "28",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#Restaurant",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Restaurant",
+      "en" : "Restaurant (distinct)"
+    },
+    "individuals" : [ {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_017",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_017"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_018",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_018"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_019",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_019"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_013",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_013"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_014",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_014"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_015",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_015"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_016",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_016"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_097",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_097"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_010",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_010"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_098",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_098"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_011",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_011"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_099",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_099"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_012",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_012"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_093",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_093"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_094",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_094"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_095",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_095"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_096",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_096"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_090",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_090"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_091",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_091"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_092",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_092"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_006",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_006"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_007",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_007"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_008",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_008"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_009",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_009"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_002",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_002"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_003",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_003"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_004",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_004"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_005",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_005"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_086",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_086"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_087",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_087"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_088",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_088"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_089",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_089"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_001",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_001"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_082",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_082"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_083",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_083"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_084",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_084"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_085",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_085"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_080",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_080"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_081",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_081"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_079",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_079"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_075",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_075"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_076",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_076"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_077",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_077"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_078",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_078"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_071",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_071"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_072",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_072"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_073",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_073"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_074",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_074"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_070",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_070"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_068",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_068"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_069",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_069"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_064",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_064"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_065",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_065"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_066",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_066"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_100",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_100"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_067",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_067"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_060",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_060"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_061",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_061"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_062",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_062"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_063",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_063"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_057",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_057"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_058",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_058"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_059",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_059"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_053",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_053"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_054",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_054"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_055",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_055"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_056",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_056"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_050",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_050"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_051",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_051"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_052",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_052"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_046",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_046"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_047",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_047"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_048",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_048"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_049",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_049"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_042",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_042"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_043",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_043"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_044",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_044"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_045",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_045"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_040",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_040"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_041",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_041"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_039",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_039"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_035",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_035"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_036",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_036"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_037",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_037"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_038",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_038"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_031",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_031"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_032",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_032"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_033",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_033"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_034",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_034"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_030",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_030"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_028",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_028"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_029",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_029"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_024",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_024"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_025",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_025"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_026",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_026"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_027",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_027"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_020",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_020"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_021",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_021"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_022",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_022"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#restaurant_023",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "restaurant_023"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "See Restaurant (schema). This includes distinct data properties."
+    },
+    "id" : "14",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#LocalTransportUtility",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LocalTransportUtility",
+      "en" : "TransportUtility"
+    },
+    "individuals" : [ {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_036",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_036"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_035",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_035"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_038",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_038"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_037",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_037"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_032",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_032"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_031",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_031"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_034",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_034"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_033",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_033"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_039",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_039"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_030",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_030"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_047",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_047"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_046",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_046"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_049",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_049"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_048",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_048"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_043",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_043"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_042",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_042"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_045",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_045"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_044",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_044"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_041",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_041"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_040",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_040"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_058",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_058"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_057",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_057"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_059",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_059"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_054",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_054"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_053",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_053"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_056",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_056"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_055",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_055"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_050",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_050"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_052",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_052"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_051",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_051"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_069",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_069"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_068",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_068"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_065",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_065"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_064",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_064"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_100",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_100"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_067",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_067"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_066",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_066"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_061",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_061"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_060",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_060"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_063",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_063"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_062",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_062"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_079",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_079"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_076",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_076"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_075",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_075"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_078",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_078"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_077",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_077"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_072",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_072"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_071",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_071"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_074",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_074"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_073",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_073"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_070",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_070"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_003",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_003"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_002",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_002"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_005",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_005"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_004",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_004"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_087",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_087"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_086",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_086"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_089",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_089"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_001",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_001"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_088",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_088"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_007",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_007"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_006",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_006"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_009",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_009"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_008",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_008"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_083",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_083"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_082",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_082"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_085",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_085"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_084",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_084"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_081",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_081"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_080",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_080"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_014",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_014"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_013",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_013"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_016",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_016"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_015",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_015"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_098",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_098"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_010",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_010"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_097",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_097"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_012",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_012"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_011",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_011"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_099",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_099"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_018",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_018"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_017",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_017"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_019",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_019"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_094",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_094"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_093",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_093"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_096",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_096"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_095",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_095"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_090",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_090"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_092",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_092"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_091",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_091"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_025",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_025"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_024",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_024"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_027",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_027"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_026",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_026"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_021",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_021"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_020",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_020"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_023",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_023"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_022",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_022"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_029",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_029"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#transport_028",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "transport_028"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Touristic resource that allows or facilitates mobility within an area."
+    },
+    "id" : "16",
+    "superClasses" : [ "26", "2" ]
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#HospitalityUtility",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HospitalityUtility",
+      "en" : "HospitalityUtility"
+    },
+    "subClasses" : [ "41", "4" ],
+    "comment" : {
+      "undefined" : "Includes food services and hostelling services"
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "18", "52" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "14", "16" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "12"
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "57",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://schema.org/Hotel",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hotel",
+      "en" : "Hotel (schema)"
+    },
+    "subClasses" : [ "52" ],
+    "comment" : {
+      "undefined" : "Facility that offers hostelling services which allows independent co-living of hosts."
+    },
+    "attributes" : [ "external" ],
+    "id" : "41",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://dbpedia.org/property/PublicService",
+    "baseIri" : "http://dbpedia.org/property",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PublicService",
+      "en" : "PublicService"
+    },
+    "subClasses" : [ "26" ],
+    "comment" : {
+      "undefined" : "Service totally or partially financed or managed by Public Administrations."
+    },
+    "attributes" : [ "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "44",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#TouristicAttractionType",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TouristicAttractionType",
+      "undefined" : "TouristicAttractionType"
+    },
+    "individuals" : [ {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#culturalAttraction",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "culturalAttraction"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#museum",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "museum"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#beach",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "beach"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#monument",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "monument"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#park",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "park"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Helps classificating a touristic attraction by its characteristics"
+    },
+    "id" : "35",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "5",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#TransportType",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportType",
+      "undefined" : "TransportType"
+    },
+    "individuals" : [ {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#bus",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "bus"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#publicBicycle",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "publicBicycle"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#underground",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "underground"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#taxi",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "taxi"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#tram",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "tram"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Helps classificating a transport service by its characteristics"
+    },
+    "id" : "23",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "http://schema.org/AdministrativeArea",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AdministrativeArea",
+      "en" : "AdministrativeArea"
+    },
+    "subClasses" : [ "46" ],
+    "comment" : {
+      "undefined" : "Area delimited by administrative matters."
+    },
+    "attributes" : [ "external" ],
+    "id" : "20",
+    "superClasses" : [ "21" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#date",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "10",
+    "label" : {
+      "IRI-based" : "date"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "42",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "7",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#Hotel",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Hotel",
+      "en" : "Hotel (distinct)"
+    },
+    "individuals" : [ {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_060",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_060"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_063",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_063"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_064",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_064"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_061",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_061"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_062",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_062"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_100",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_100"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_067",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_067"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_068",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_068"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_065",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_065"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_066",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_066"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_058",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_058"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_059",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_059"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_052",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_052"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_053",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_053"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_050",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_050"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_051",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_051"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_056",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_056"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_057",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_057"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_054",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_054"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_055",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_055"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_049",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_049"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_047",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_047"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_048",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_048"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_041",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_041"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_042",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_042"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_040",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_040"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_045",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_045"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_046",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_046"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_043",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_043"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_044",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_044"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_038",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_038"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_039",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_039"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_036",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_036"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_037",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_037"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_030",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_030"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_031",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_031"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_034",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_034"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_035",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_035"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_032",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_032"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_033",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_033"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_027",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_027"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_028",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_028"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_025",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_025"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_026",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_026"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_029",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_029"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_020",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_020"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_023",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_023"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_024",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_024"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_021",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_021"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_022",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_022"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_016",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_016"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_017",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_017"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_014",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_014"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_015",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_015"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_018",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_018"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_019",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_019"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_092",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_092"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_093",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_093"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_090",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_090"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_091",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_091"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_096",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_096"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_097",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_097"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_094",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_094"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_095",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_095"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_012",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_012"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_013",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_013"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_098",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_098"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_010",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_010"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_011",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_011"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_099",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_099"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_005",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_005"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_006",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_006"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_003",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_003"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_004",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_004"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_009",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_009"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_007",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_007"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_008",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_008"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_081",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_081"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_082",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_082"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_080",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_080"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_085",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_085"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_086",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_086"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_083",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_083"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_084",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_084"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_001",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_001"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_089",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_089"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_002",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_002"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_087",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_087"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_088",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_088"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_070",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_070"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_071",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_071"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_074",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_074"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_075",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_075"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_072",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_072"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_073",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_073"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_078",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_078"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_079",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_079"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_076",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_076"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_077",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_077"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#hotel_069",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "hotel_069"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "See Hotel (schema). This includes distinct data properties."
+    },
+    "id" : "52",
+    "superClasses" : [ "41" ]
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "63",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#TransportService",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportService",
+      "en" : "TransportService"
+    },
+    "subClasses" : [ "16" ],
+    "comment" : {
+      "undefined" : "Public Service dedicated to facilitate mobility within an Administrative Area"
+    },
+    "id" : "26",
+    "superClasses" : [ "48" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "64",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#double",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "39",
+    "label" : {
+      "IRI-based" : "double"
+    }
+  }, {
+    "iri" : "http://schema.org/Intangible",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Intangible",
+      "en" : "Intangible"
+    },
+    "subClasses" : [ "24" ],
+    "comment" : {
+      "undefined" : "A utility class that serves as the umbrella for a number of 'intangible' things such as quantities, structured values, etc."
+    },
+    "attributes" : [ "external" ],
+    "id" : "33"
+  }, {
+    "iri" : "http://schema.org/Enumeration",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Enumeration",
+      "en" : "Enumeration"
+    },
+    "subClasses" : [ "31", "37", "35", "23" ],
+    "comment" : {
+      "undefined" : "List of individuals that helps qualifying another individuals."
+    },
+    "attributes" : [ "external" ],
+    "id" : "24",
+    "superClasses" : [ "33" ]
+  }, {
+    "iri" : "http://schema.org/City",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "City",
+      "en" : "City"
+    },
+    "individuals" : [ {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#Valencia",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "Valencia"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#Bilbao",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "Bilbao"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#Pamplona",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "Pamplona"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#Zaragoza",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "Zaragoza"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#Sevilla",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "Sevilla"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#Barcelona",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "Barcelona"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#Madrid",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "Madrid"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#Málaga",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "Málaga"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#Toledo",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "Toledo"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#SanSebastián",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "SanSebastián"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#Cádiz",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "Cádiz"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "A city or town"
+    },
+    "attributes" : [ "external" ],
+    "id" : "46",
+    "superClasses" : [ "20" ]
+  }, {
+    "iri" : "http://schema.org/Place",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Place",
+      "en" : "Place"
+    },
+    "subClasses" : [ "20" ],
+    "comment" : {
+      "undefined" : "Generic area"
+    },
+    "attributes" : [ "external" ],
+    "id" : "21"
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#EventType",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EventType",
+      "undefined" : "EventType"
+    },
+    "individuals" : [ {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#musicEvent",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "musicEvent"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#technologicalEvent",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "technologicalEvent"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#sportsEvent",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "sportsEvent"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#gastronomicEvent",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "gastronomicEvent"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#culturalEvent",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "culturalEvent"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Helps classificating an event by its characteristics"
+    },
+    "id" : "31",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#HotelType",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HotelType",
+      "undefined" : "HotelType"
+    },
+    "individuals" : [ {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#luxuryHotel",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "luxuryHotel"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#beachHotel",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "beachHotel"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#businessHotel",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "businessHotel"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#ruralHotel",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "ruralHotel"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#touristicHotel",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "touristicHotel"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Helps classificating a hotel by its characteristics"
+    },
+    "id" : "37",
+    "superClasses" : [ "24" ]
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#TouristicAttraction",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TouristicAttraction",
+      "en" : "TouristicAttraction"
+    },
+    "individuals" : [ {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_031",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_031"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_030",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_030"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_033",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_033"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_032",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_032"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_039",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_039"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_038",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_038"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_035",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_035"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_034",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_034"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_037",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_037"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_036",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_036"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_020",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_020"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_022",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_022"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_021",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_021"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_028",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_028"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_027",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_027"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_029",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_029"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_024",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_024"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_023",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_023"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_026",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_026"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_025",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_025"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_053",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_053"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_052",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_052"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_055",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_055"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_054",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_054"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_051",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_051"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_050",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_050"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_057",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_057"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_056",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_056"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_059",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_059"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_058",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_058"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_042",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_042"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_041",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_041"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_044",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_044"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_043",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_043"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_040",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_040"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_049",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_049"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_046",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_046"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_045",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_045"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_048",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_048"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_047",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_047"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_075",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_075"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_074",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_074"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_077",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_077"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_076",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_076"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_071",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_071"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_070",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_070"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_073",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_073"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_072",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_072"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_079",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_079"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_078",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_078"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_064",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_064"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_063",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_063"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_066",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_066"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_065",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_065"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_060",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_060"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_062",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_062"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_061",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_061"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_068",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_068"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_067",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_067"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_100",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_100"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_069",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_069"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_091",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_091"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_090",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_090"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_097",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_097"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_096",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_096"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_099",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_099"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_011",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_011"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_098",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_098"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_010",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_010"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_093",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_093"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_092",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_092"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_095",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_095"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_094",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_094"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_017",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_017"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_016",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_016"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_019",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_019"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_018",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_018"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_013",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_013"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_012",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_012"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_015",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_015"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_014",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_014"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_080",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_080"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_086",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_086"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_085",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_085"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_088",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_088"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_087",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_087"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_082",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_082"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_081",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_081"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_084",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_084"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_083",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_083"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_006",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_006"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_005",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_005"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_008",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_008"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_007",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_007"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_002",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_002"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_089",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_089"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_001",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_001"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_004",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_004"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_003",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_003"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#atraccion_009",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "atraccion_009"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Touristic resource that may catch tourists' attention and serves as a réclame to attract tourists to an area"
+    },
+    "id" : "18",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#Company",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Company",
+      "en" : "Company"
+    },
+    "subClasses" : [ "28" ],
+    "comment" : {
+      "undefined" : "Association targetting economical benefit."
+    },
+    "id" : "29"
+  }, {
+    "iri" : "http://schema.org/Event",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Event",
+      "en" : "Event"
+    },
+    "individuals" : [ {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_096",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_096"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_095",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_095"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_094",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_094"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_093",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_093"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_012",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_012"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_011",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_011"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_099",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_099"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_010",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_010"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_098",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_098"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_097",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_097"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_092",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_092"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_091",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_091"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_090",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_090"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_005",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_005"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_004",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_004"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_003",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_003"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_002",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_002"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_009",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_009"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_008",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_008"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_007",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_007"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_006",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_006"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_085",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_085"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_084",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_084"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_083",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_083"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_082",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_082"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_089",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_089"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_001",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_001"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_088",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_088"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_087",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_087"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_086",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_086"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_081",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_081"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_080",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_080"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_079",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_079"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_030",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_030"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_034",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_034"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_033",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_033"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_032",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_032"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_031",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_031"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_027",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_027"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_026",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_026"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_025",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_025"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_024",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_024"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_029",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_029"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_028",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_028"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_023",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_023"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_022",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_022"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_021",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_021"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_020",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_020"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_016",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_016"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_015",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_015"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_014",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_014"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_013",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_013"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_019",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_019"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_018",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_018"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_017",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_017"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_052",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_052"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_051",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_051"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_050",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_050"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_056",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_056"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_055",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_055"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_054",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_054"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_053",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_053"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_049",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_049"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_048",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_048"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_047",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_047"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_046",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_046"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_041",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_041"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_040",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_040"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_045",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_045"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_044",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_044"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_043",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_043"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_042",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_042"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_038",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_038"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_037",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_037"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_036",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_036"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_035",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_035"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_039",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_039"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_074",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_074"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_073",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_073"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_072",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_072"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_071",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_071"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_078",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_078"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_077",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_077"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_076",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_076"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_075",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_075"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_070",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_070"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_069",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_069"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_068",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_068"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_063",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_063"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_062",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_062"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_061",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_061"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_060",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_060"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_100",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_100"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_067",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_067"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_066",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_066"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_065",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_065"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_064",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_064"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_059",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_059"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_058",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_058"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#evento_057",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "evento_057"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Happening affair that takes place somewhere."
+    },
+    "attributes" : [ "external" ],
+    "id" : "9"
+  }, {
+    "iri" : "http://schema.org/Restaurant",
+    "baseIri" : "http://schema.org",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Restaurant",
+      "en" : "Restaurant (schema)"
+    },
+    "subClasses" : [ "14" ],
+    "comment" : {
+      "undefined" : "Facility that services at-the-moment made food recipes and drinks mainly intended to be consumed in place."
+    },
+    "attributes" : [ "external" ],
+    "id" : "4",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#TransportCompany",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TransportCompany",
+      "en" : "TransportCompany"
+    },
+    "individuals" : [ {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#TransMadrid",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "TransMadrid"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#TransBilbao",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "TransBilbao"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MetroMálaga",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MetroMálaga"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#TransValencia",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "TransValencia"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#CityMadrid",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "CityMadrid"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MetroToledo",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MetroToledo"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MoviBilbao",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MoviBilbao"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#CityPamplona",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "CityPamplona"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#CitySevilla",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "CitySevilla"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#CityBilbao",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "CityBilbao"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#TransSanSebastián",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "TransSanSebastián"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#UrbanZaragoza",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "UrbanZaragoza"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#UrbanMadrid",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "UrbanMadrid"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#CityBarcelona",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "CityBarcelona"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#UrbanPamplona",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "UrbanPamplona"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#CityCádiz",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "CityCádiz"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#UrbanBarcelona",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "UrbanBarcelona"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MoviSanSebastián",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MoviSanSebastián"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MetroMadrid",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MetroMadrid"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MoviBarcelona",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MoviBarcelona"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MoviValencia",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MoviValencia"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#TransPamplona",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "TransPamplona"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MoviMadrid",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MoviMadrid"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MetroBarcelona",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MetroBarcelona"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#TransCádiz",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "TransCádiz"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#UrbanSanSebastián",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "UrbanSanSebastián"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#UrbanBilbao",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "UrbanBilbao"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MoviMálaga",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MoviMálaga"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#CityToledo",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "CityToledo"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MoviPamplona",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MoviPamplona"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#UrbanMálaga",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "UrbanMálaga"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#UrbanSevilla",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "UrbanSevilla"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#TransToledo",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "TransToledo"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#TransSevilla",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "TransSevilla"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MetroCádiz",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MetroCádiz"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MetroPamplona",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MetroPamplona"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MoviCádiz",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MoviCádiz"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#UrbanValencia",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "UrbanValencia"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#TransZaragoza",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "TransZaragoza"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#UrbanToledo",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "UrbanToledo"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MetroSevilla",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MetroSevilla"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MetroBilbao",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MetroBilbao"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#TransMálaga",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "TransMálaga"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MoviSevilla",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MoviSevilla"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MetroSanSebastián",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MetroSanSebastián"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#CityZaragoza",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "CityZaragoza"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#CityMálaga",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "CityMálaga"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MoviToledo",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MoviToledo"
+      }
+    }, {
+      "iri" : "https://purl.archive.org/tourism-utilities-ontology#MetroZaragoza",
+      "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+      "labels" : {
+        "IRI-based" : "MetroZaragoza"
+      }
+    } ],
+    "comment" : {
+      "undefined" : "Company dedicated to offer transport services"
+    },
+    "id" : "28",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#TouristicResource",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TouristicResource",
+      "en" : "TouristicResource"
+    },
+    "subClasses" : [ "18", "16", "1" ],
+    "comment" : {
+      "undefined" : "Resource relevant to tourists in an Administrative area"
+    },
+    "id" : "2",
+    "superClasses" : [ "71" ]
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Resource",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Resource",
+      "en" : "Resource"
+    },
+    "subClasses" : [ "2" ],
+    "comment" : {
+      "en" : "Rdfs Resource class"
+    },
+    "attributes" : [ "external" ],
+    "id" : "71"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "19",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "27",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "30",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "45",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "47",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "50",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "55",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "61",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "65",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "66",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "67",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "68",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "69",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "72",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "http://schema.org/servesCuisine",
+    "baseIri" : "http://schema.org",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "servesCuisine"
+    },
+    "domain" : "4",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#isOfType",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isOfType"
+    },
+    "domain" : "7",
+    "attributes" : [ "functional", "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "http://schema.org/startDate",
+    "baseIri" : "http://schema.org",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "startDate"
+    },
+    "domain" : "9",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#averagePrice",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "averagePrice"
+    },
+    "domain" : "12",
+    "attributes" : [ "datatype" ],
+    "id" : "11"
+  }, {
+    "range" : "2",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "15"
+  }, {
+    "range" : "2",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "21",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "19"
+  }, {
+    "range" : "24",
+    "domain" : "23",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "4",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "25"
+  }, {
+    "range" : "29",
+    "domain" : "28",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "27"
+  }, {
+    "range" : "24",
+    "domain" : "31",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "30"
+  }, {
+    "range" : "33",
+    "domain" : "24",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "32"
+  }, {
+    "range" : "24",
+    "domain" : "35",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "24",
+    "domain" : "37",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "iri" : "http://schema.org/longitude",
+    "baseIri" : "http://schema.org",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "longitude"
+    },
+    "domain" : "21",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#starRating",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "starRating"
+    },
+    "domain" : "41",
+    "attributes" : [ "datatype" ],
+    "id" : "40"
+  }, {
+    "iri" : "http://schema.org/name",
+    "baseIri" : "http://schema.org",
+    "range" : "44",
+    "label" : {
+      "IRI-based" : "name"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "43"
+  }, {
+    "range" : "20",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "45"
+  }, {
+    "range" : "48",
+    "domain" : "26",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "47"
+  }, {
+    "range" : "26",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "49"
+  }, {
+    "range" : "1",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "50"
+  }, {
+    "range" : "41",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "53"
+  }, {
+    "range" : "1",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#userRating",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "userRating"
+    },
+    "domain" : "51",
+    "attributes" : [ "datatype" ],
+    "id" : "55"
+  }, {
+    "iri" : "http://schema.org/price",
+    "baseIri" : "http://schema.org",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "price"
+    },
+    "domain" : "7",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#takesPlaceIn",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "takesPlaceIn"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#hosts",
+    "inverse" : "60",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "hosts"
+    },
+    "domain" : "20",
+    "attributes" : [ "object" ],
+    "id" : "61"
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#manages",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "manages"
+    },
+    "domain" : "29",
+    "attributes" : [ "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#isManagedBy",
+    "inverse" : "62",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "isManagedBy"
+    },
+    "domain" : "63",
+    "attributes" : [ "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://schema.org/latitude",
+    "baseIri" : "http://schema.org",
+    "range" : "64",
+    "label" : {
+      "IRI-based" : "latitude"
+    },
+    "domain" : "21",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "66"
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#isFinancedBy",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "isFinancedBy"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "67"
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#pricePerNight",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "range" : "57",
+    "label" : {
+      "IRI-based" : "pricePerNight"
+    },
+    "domain" : "52",
+    "attributes" : [ "datatype" ],
+    "id" : "68"
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#finances",
+    "inverse" : "67",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "finances"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "69"
+  }, {
+    "iri" : "https://purl.archive.org/tourism-utilities-ontology#locatedIn",
+    "baseIri" : "https://purl.archive.org/tourism-utilities-ontology",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "locatedIn"
+    },
+    "domain" : "7",
+    "attributes" : [ "object" ],
+    "id" : "70"
+  }, {
+    "range" : "71",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "72"
+  } ]
+}
