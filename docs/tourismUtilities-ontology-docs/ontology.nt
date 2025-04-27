@@ -75,6 +75,7 @@
 # https://purl.archive.org/tourism-utilities-ontology#finances
 <https://purl.archive.org/tourism-utilities-ontology#finances> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://purl.archive.org/tourism-utilities-ontology#finances> <http://www.w3.org/2002/07/owl#inverseOf> <https://purl.archive.org/tourism-utilities-ontology#isFinancedBy> .
+<https://purl.archive.org/tourism-utilities-ontology#finances> <http://www.w3.org/2000/01/rdf-schema#range> <http://dbpedia.org/property/PublicService> .
 # 
 # https://purl.archive.org/tourism-utilities-ontology#hosts
 <https://purl.archive.org/tourism-utilities-ontology#hosts> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -88,14 +89,14 @@
 # https://purl.archive.org/tourism-utilities-ontology#isManagedBy
 <https://purl.archive.org/tourism-utilities-ontology#isManagedBy> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
 <https://purl.archive.org/tourism-utilities-ontology#isManagedBy> <http://www.w3.org/2002/07/owl#inverseOf> <https://purl.archive.org/tourism-utilities-ontology#manages> .
+<https://purl.archive.org/tourism-utilities-ontology#isManagedBy> <http://www.w3.org/2000/01/rdf-schema#range> <https://purl.archive.org/tourism-utilities-ontology#Company> .
 # 
 # https://purl.archive.org/tourism-utilities-ontology#isOfType
 <https://purl.archive.org/tourism-utilities-ontology#isOfType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://purl.archive.org/tourism-utilities-ontology#isOfType> <http://www.w3.org/2002/07/owl#inverseOf> <https://purl.archive.org/tourism-utilities-ontology#isTypeOf> .
 <https://purl.archive.org/tourism-utilities-ontology#isOfType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#FunctionalProperty> .
-<https://purl.archive.org/tourism-utilities-ontology#isOfType> <http://www.w3.org/2000/01/rdf-schema#domain> _:genid1 .
-_:genid1 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://schema.org/Enumeration> .
-_:genid1 <http://www.w3.org/2002/07/owl#onProperty> <https://purl.archive.org/tourism-utilities-ontology#isOfType> .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+<https://purl.archive.org/tourism-utilities-ontology#isOfType> <http://www.w3.org/2000/01/rdf-schema#domain> <http://schema.org/Enumeration> .
+<https://purl.archive.org/tourism-utilities-ontology#isOfType> <http://www.w3.org/2002/07/owl#propertyDisjointWith> <https://purl.archive.org/tourism-utilities-ontology#isTypeOf> .
 # 
 # https://purl.archive.org/tourism-utilities-ontology#isTypeOf
 <https://purl.archive.org/tourism-utilities-ontology#isTypeOf> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
@@ -151,13 +152,13 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://purl.archive.org/tourism-utilities-ontology#averagePrice
 <https://purl.archive.org/tourism-utilities-ontology#averagePrice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://purl.archive.org/tourism-utilities-ontology#averagePrice> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/price> .
-<https://purl.archive.org/tourism-utilities-ontology#averagePrice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.archive.org/tourism-utilities-ontology#LocalTransportUtility> .
-<https://purl.archive.org/tourism-utilities-ontology#averagePrice> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.archive.org/tourism-utilities-ontology#Restaurant> .
+<https://purl.archive.org/tourism-utilities-ontology#averagePrice> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 # 
 # https://purl.archive.org/tourism-utilities-ontology#pricePerNight
 <https://purl.archive.org/tourism-utilities-ontology#pricePerNight> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
 <https://purl.archive.org/tourism-utilities-ontology#pricePerNight> <http://www.w3.org/2000/01/rdf-schema#subPropertyOf> <http://schema.org/price> .
 <https://purl.archive.org/tourism-utilities-ontology#pricePerNight> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.archive.org/tourism-utilities-ontology#Hotel> .
+<https://purl.archive.org/tourism-utilities-ontology#pricePerNight> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 # 
 # https://purl.archive.org/tourism-utilities-ontology#starRating
 <https://purl.archive.org/tourism-utilities-ontology#starRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
@@ -166,9 +167,6 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://purl.archive.org/tourism-utilities-ontology#userRating
 <https://purl.archive.org/tourism-utilities-ontology#userRating> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
-<https://purl.archive.org/tourism-utilities-ontology#userRating> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.archive.org/tourism-utilities-ontology#Hotel> .
-<https://purl.archive.org/tourism-utilities-ontology#userRating> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.archive.org/tourism-utilities-ontology#Restaurant> .
-<https://purl.archive.org/tourism-utilities-ontology#userRating> <http://www.w3.org/2000/01/rdf-schema#domain> <https://purl.archive.org/tourism-utilities-ontology#TouristicAttraction> .
 <https://purl.archive.org/tourism-utilities-ontology#userRating> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#double> .
 # 
 # 
@@ -211,6 +209,9 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://schema.org/Hotel
 <http://schema.org/Hotel> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://schema.org/Hotel> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.archive.org/tourism-utilities-ontology#HospitalityUtility> .
+<http://schema.org/Hotel> <http://www.w3.org/2002/07/owl#disjointWith> <http://schema.org/Restaurant> .
+<http://schema.org/Hotel> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.archive.org/tourism-utilities-ontology#LocalTransportUtility> .
+<http://schema.org/Hotel> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.archive.org/tourism-utilities-ontology#TouristicAttraction> .
 <http://schema.org/Hotel> <http://www.w3.org/2000/01/rdf-schema#comment> "Facility that offers hostelling services which allows independent co-living of hosts." .
 <http://schema.org/Hotel> <http://www.w3.org/2000/01/rdf-schema#label> "Hotel (schema)"@en .
 # 
@@ -227,6 +228,8 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # http://schema.org/Restaurant
 <http://schema.org/Restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://schema.org/Restaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.archive.org/tourism-utilities-ontology#HospitalityUtility> .
+<http://schema.org/Restaurant> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.archive.org/tourism-utilities-ontology#LocalTransportUtility> .
+<http://schema.org/Restaurant> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.archive.org/tourism-utilities-ontology#TouristicAttraction> .
 <http://schema.org/Restaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "Facility that services at-the-moment made food recipes and drinks mainly intended to be consumed in place." .
 <http://schema.org/Restaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant (schema)"@en .
 # 
@@ -246,24 +249,24 @@ _:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://purl.archive.org/tourism-utilities-ontology#EventType
 <https://purl.archive.org/tourism-utilities-ontology#EventType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.archive.org/tourism-utilities-ontology#EventType> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid2 .
-_:genid2 <http://www.w3.org/2002/07/owl#oneOf> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
+<https://purl.archive.org/tourism-utilities-ontology#EventType> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#oneOf> _:genid6 .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid4 .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#technologicalEvent> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#technologicalEvent> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#sportsEvent> .
 _:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#sportsEvent> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#musicEvent> .
 _:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#musicEvent> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#gastronomicEvent> .
 _:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#gastronomicEvent> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#culturalEvent> .
 _:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#culturalEvent> .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.archive.org/tourism-utilities-ontology#EventType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Enumeration> .
 <https://purl.archive.org/tourism-utilities-ontology#EventType> <http://www.w3.org/2000/01/rdf-schema#comment> "Helps classificating an event by its characteristics" .
 <https://purl.archive.org/tourism-utilities-ontology#EventType> <http://www.w3.org/2000/01/rdf-schema#label> "EventType" .
@@ -271,6 +274,8 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # https://purl.archive.org/tourism-utilities-ontology#HospitalityUtility
 <https://purl.archive.org/tourism-utilities-ontology#HospitalityUtility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.archive.org/tourism-utilities-ontology#HospitalityUtility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.archive.org/tourism-utilities-ontology#TouristicResource> .
+<https://purl.archive.org/tourism-utilities-ontology#HospitalityUtility> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.archive.org/tourism-utilities-ontology#LocalTransportUtility> .
+<https://purl.archive.org/tourism-utilities-ontology#HospitalityUtility> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.archive.org/tourism-utilities-ontology#TouristicAttraction> .
 <https://purl.archive.org/tourism-utilities-ontology#HospitalityUtility> <http://www.w3.org/2000/01/rdf-schema#comment> "Includes food services and hostelling services" .
 <https://purl.archive.org/tourism-utilities-ontology#HospitalityUtility> <http://www.w3.org/2000/01/rdf-schema#label> "HospitalityUtility"@en .
 # 
@@ -282,24 +287,24 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://purl.archive.org/tourism-utilities-ontology#HotelType
 <https://purl.archive.org/tourism-utilities-ontology#HotelType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.archive.org/tourism-utilities-ontology#HotelType> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid8 .
-_:genid8 <http://www.w3.org/2002/07/owl#oneOf> _:genid13 .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+<https://purl.archive.org/tourism-utilities-ontology#HotelType> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid7 .
+_:genid7 <http://www.w3.org/2002/07/owl#oneOf> _:genid12 .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid11 .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#touristicHotel> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#touristicHotel> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#ruralHotel> .
 _:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#ruralHotel> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#luxuryHotel> .
 _:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#luxuryHotel> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#businessHotel> .
 _:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#businessHotel> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#beachHotel> .
 _:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#beachHotel> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.archive.org/tourism-utilities-ontology#HotelType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Enumeration> .
 <https://purl.archive.org/tourism-utilities-ontology#HotelType> <http://www.w3.org/2000/01/rdf-schema#comment> "Helps classificating a hotel by its characteristics" .
 <https://purl.archive.org/tourism-utilities-ontology#HotelType> <http://www.w3.org/2000/01/rdf-schema#label> "HotelType" .
@@ -308,12 +313,14 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 <https://purl.archive.org/tourism-utilities-ontology#LocalTransportUtility> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.archive.org/tourism-utilities-ontology#LocalTransportUtility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.archive.org/tourism-utilities-ontology#TouristicResource> .
 <https://purl.archive.org/tourism-utilities-ontology#LocalTransportUtility> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <https://purl.archive.org/tourism-utilities-ontology#TransportService> .
+<https://purl.archive.org/tourism-utilities-ontology#LocalTransportUtility> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.archive.org/tourism-utilities-ontology#TouristicAttraction> .
 <https://purl.archive.org/tourism-utilities-ontology#LocalTransportUtility> <http://www.w3.org/2000/01/rdf-schema#comment> "Touristic resource that allows or facilitates mobility within an area." .
 <https://purl.archive.org/tourism-utilities-ontology#LocalTransportUtility> <http://www.w3.org/2000/01/rdf-schema#label> "TransportUtility"@en .
 # 
 # https://purl.archive.org/tourism-utilities-ontology#Restaurant
 <https://purl.archive.org/tourism-utilities-ontology#Restaurant> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.archive.org/tourism-utilities-ontology#Restaurant> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Restaurant> .
+<https://purl.archive.org/tourism-utilities-ontology#Restaurant> <http://www.w3.org/2002/07/owl#disjointWith> <https://purl.archive.org/tourism-utilities-ontology#TouristicAttraction> .
 <https://purl.archive.org/tourism-utilities-ontology#Restaurant> <http://www.w3.org/2000/01/rdf-schema#comment> "See Restaurant (schema). This includes distinct data properties." .
 <https://purl.archive.org/tourism-utilities-ontology#Restaurant> <http://www.w3.org/2000/01/rdf-schema#label> "Restaurant (distinct)"@en .
 # 
@@ -325,24 +332,24 @@ _:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/20
 # 
 # https://purl.archive.org/tourism-utilities-ontology#TouristicAttractionType
 <https://purl.archive.org/tourism-utilities-ontology#TouristicAttractionType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.archive.org/tourism-utilities-ontology#TouristicAttractionType> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid14 .
-_:genid14 <http://www.w3.org/2002/07/owl#oneOf> _:genid19 .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid18 .
+<https://purl.archive.org/tourism-utilities-ontology#TouristicAttractionType> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid13 .
+_:genid13 <http://www.w3.org/2002/07/owl#oneOf> _:genid18 .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#park> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#park> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#museum> .
 _:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#museum> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#monument> .
 _:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#monument> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#culturalAttraction> .
 _:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#culturalAttraction> .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#beach> .
 _:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#beach> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.archive.org/tourism-utilities-ontology#TouristicAttractionType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Enumeration> .
 <https://purl.archive.org/tourism-utilities-ontology#TouristicAttractionType> <http://www.w3.org/2000/01/rdf-schema#comment> "Helps classificating a touristic attraction by its characteristics" .
 <https://purl.archive.org/tourism-utilities-ontology#TouristicAttractionType> <http://www.w3.org/2000/01/rdf-schema#label> "TouristicAttractionType" .
@@ -367,24 +374,24 @@ _:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # https://purl.archive.org/tourism-utilities-ontology#TransportType
 <https://purl.archive.org/tourism-utilities-ontology#TransportType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<https://purl.archive.org/tourism-utilities-ontology#TransportType> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid20 .
-_:genid20 <http://www.w3.org/2002/07/owl#oneOf> _:genid25 .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+<https://purl.archive.org/tourism-utilities-ontology#TransportType> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#oneOf> _:genid24 .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
 _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid22 .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#underground> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#underground> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#tram> .
 _:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#tram> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#taxi> .
 _:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#taxi> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#publicBicycle> .
 _:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#publicBicycle> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#bus> .
 _:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <https://purl.archive.org/tourism-utilities-ontology#bus> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <https://purl.archive.org/tourism-utilities-ontology#TransportType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Enumeration> .
 <https://purl.archive.org/tourism-utilities-ontology#TransportType> <http://www.w3.org/2000/01/rdf-schema#comment> "Helps classificating a transport service by its characteristics" .
 <https://purl.archive.org/tourism-utilities-ontology#TransportType> <http://www.w3.org/2000/01/rdf-schema#label> "TransportType" .
@@ -5101,55 +5108,55 @@ _:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 <urn:swrl:var#X> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
 <urn:swrl:var#Y> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Variable> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
-_:genid26 <http://www.w3.org/2003/11/swrl#body> _:genid27 .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
-_:genid28 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#Y> .
-_:genid28 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
-_:genid28 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://purl.archive.org/tourism-utilities-ontology#isOfType> .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid26 <http://www.w3.org/2003/11/swrl#head> _:genid29 .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid30 .
-_:genid30 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#X> .
-_:genid30 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#Y> .
-_:genid30 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://purl.archive.org/tourism-utilities-ontology#isTypeOf> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
-_:genid31 <http://www.w3.org/2003/11/swrl#body> _:genid32 .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid33 .
-_:genid33 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#Y> .
-_:genid33 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
-_:genid33 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://purl.archive.org/tourism-utilities-ontology#locatedIn> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid31 <http://www.w3.org/2003/11/swrl#head> _:genid34 .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
-_:genid35 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#X> .
-_:genid35 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#Y> .
-_:genid35 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://purl.archive.org/tourism-utilities-ontology#hosts> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
-_:genid36 <http://www.w3.org/2003/11/swrl#body> _:genid37 .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid38 .
-_:genid38 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#Y> .
-_:genid38 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
-_:genid38 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://purl.archive.org/tourism-utilities-ontology#takesPlaceIn> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
-_:genid36 <http://www.w3.org/2003/11/swrl#head> _:genid39 .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
-_:genid40 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#Y> .
-_:genid40 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
-_:genid40 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://purl.archive.org/tourism-utilities-ontology#locatedIn> .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid25 <http://www.w3.org/2003/11/swrl#body> _:genid26 .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid27 .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#Y> .
+_:genid27 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid27 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://purl.archive.org/tourism-utilities-ontology#isOfType> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid25 <http://www.w3.org/2003/11/swrl#head> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid29 .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#X> .
+_:genid29 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#Y> .
+_:genid29 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://purl.archive.org/tourism-utilities-ontology#isTypeOf> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid30 <http://www.w3.org/2003/11/swrl#body> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
+_:genid32 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#Y> .
+_:genid32 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid32 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://purl.archive.org/tourism-utilities-ontology#locatedIn> .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid30 <http://www.w3.org/2003/11/swrl#head> _:genid33 .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid34 .
+_:genid34 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#Y> .
+_:genid34 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid34 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://purl.archive.org/tourism-utilities-ontology#takesPlaceIn> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#Imp> .
+_:genid35 <http://www.w3.org/2003/11/swrl#body> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid37 .
+_:genid37 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#Y> .
+_:genid37 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> .
+_:genid37 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://purl.archive.org/tourism-utilities-ontology#takesPlaceIn> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
+_:genid35 <http://www.w3.org/2003/11/swrl#head> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid39 .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#X> .
+_:genid39 <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#Y> .
+_:genid39 <http://www.w3.org/2003/11/swrl#propertyPredicate> <https://purl.archive.org/tourism-utilities-ontology#hosts> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2003/11/swrl#AtomList> .
 # Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

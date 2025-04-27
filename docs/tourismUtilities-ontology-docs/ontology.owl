@@ -149,6 +149,7 @@
 
     <owl:ObjectProperty rdf:about="https://purl.archive.org/tourism-utilities-ontology#finances">
         <owl:inverseOf rdf:resource="https://purl.archive.org/tourism-utilities-ontology#isFinancedBy"/>
+        <rdfs:range rdf:resource="http://dbpedia.org/property/PublicService"/>
     </owl:ObjectProperty>
     
 
@@ -176,6 +177,7 @@
 
     <owl:ObjectProperty rdf:about="https://purl.archive.org/tourism-utilities-ontology#isManagedBy">
         <owl:inverseOf rdf:resource="https://purl.archive.org/tourism-utilities-ontology#manages"/>
+        <rdfs:range rdf:resource="https://purl.archive.org/tourism-utilities-ontology#Company"/>
     </owl:ObjectProperty>
     
 
@@ -184,13 +186,10 @@
 
 
     <owl:ObjectProperty rdf:about="https://purl.archive.org/tourism-utilities-ontology#isOfType">
+        <owl:inverseOf rdf:resource="https://purl.archive.org/tourism-utilities-ontology#isTypeOf"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="https://purl.archive.org/tourism-utilities-ontology#isOfType"/>
-                <owl:someValuesFrom rdf:resource="http://schema.org/Enumeration"/>
-            </owl:Restriction>
-        </rdfs:domain>
+        <rdfs:domain rdf:resource="http://schema.org/Enumeration"/>
+        <owl:propertyDisjointWith rdf:resource="https://purl.archive.org/tourism-utilities-ontology#isTypeOf"/>
     </owl:ObjectProperty>
     
 
@@ -301,8 +300,7 @@
 
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/tourism-utilities-ontology#averagePrice">
         <rdfs:subPropertyOf rdf:resource="http://schema.org/price"/>
-        <rdfs:domain rdf:resource="https://purl.archive.org/tourism-utilities-ontology#LocalTransportUtility"/>
-        <rdfs:domain rdf:resource="https://purl.archive.org/tourism-utilities-ontology#Restaurant"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
@@ -313,6 +311,7 @@
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/tourism-utilities-ontology#pricePerNight">
         <rdfs:subPropertyOf rdf:resource="http://schema.org/price"/>
         <rdfs:domain rdf:resource="https://purl.archive.org/tourism-utilities-ontology#Hotel"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
@@ -331,9 +330,6 @@
 
 
     <owl:DatatypeProperty rdf:about="https://purl.archive.org/tourism-utilities-ontology#userRating">
-        <rdfs:domain rdf:resource="https://purl.archive.org/tourism-utilities-ontology#Hotel"/>
-        <rdfs:domain rdf:resource="https://purl.archive.org/tourism-utilities-ontology#Restaurant"/>
-        <rdfs:domain rdf:resource="https://purl.archive.org/tourism-utilities-ontology#TouristicAttraction"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
@@ -409,6 +405,9 @@
 
     <owl:Class rdf:about="http://schema.org/Hotel">
         <rdfs:subClassOf rdf:resource="https://purl.archive.org/tourism-utilities-ontology#HospitalityUtility"/>
+        <owl:disjointWith rdf:resource="http://schema.org/Restaurant"/>
+        <owl:disjointWith rdf:resource="https://purl.archive.org/tourism-utilities-ontology#LocalTransportUtility"/>
+        <owl:disjointWith rdf:resource="https://purl.archive.org/tourism-utilities-ontology#TouristicAttraction"/>
         <rdfs:comment>Facility that offers hostelling services which allows independent co-living of hosts.</rdfs:comment>
         <rdfs:label xml:lang="en">Hotel (schema)</rdfs:label>
     </owl:Class>
@@ -440,6 +439,8 @@
 
     <owl:Class rdf:about="http://schema.org/Restaurant">
         <rdfs:subClassOf rdf:resource="https://purl.archive.org/tourism-utilities-ontology#HospitalityUtility"/>
+        <owl:disjointWith rdf:resource="https://purl.archive.org/tourism-utilities-ontology#LocalTransportUtility"/>
+        <owl:disjointWith rdf:resource="https://purl.archive.org/tourism-utilities-ontology#TouristicAttraction"/>
         <rdfs:comment>Facility that services at-the-moment made food recipes and drinks mainly intended to be consumed in place.</rdfs:comment>
         <rdfs:label xml:lang="en">Restaurant (schema)</rdfs:label>
     </owl:Class>
@@ -503,6 +504,8 @@
 
     <owl:Class rdf:about="https://purl.archive.org/tourism-utilities-ontology#HospitalityUtility">
         <rdfs:subClassOf rdf:resource="https://purl.archive.org/tourism-utilities-ontology#TouristicResource"/>
+        <owl:disjointWith rdf:resource="https://purl.archive.org/tourism-utilities-ontology#LocalTransportUtility"/>
+        <owl:disjointWith rdf:resource="https://purl.archive.org/tourism-utilities-ontology#TouristicAttraction"/>
         <rdfs:comment>Includes food services and hostelling services</rdfs:comment>
         <rdfs:label xml:lang="en">HospitalityUtility</rdfs:label>
     </owl:Class>
@@ -548,6 +551,7 @@
     <owl:Class rdf:about="https://purl.archive.org/tourism-utilities-ontology#LocalTransportUtility">
         <rdfs:subClassOf rdf:resource="https://purl.archive.org/tourism-utilities-ontology#TouristicResource"/>
         <rdfs:subClassOf rdf:resource="https://purl.archive.org/tourism-utilities-ontology#TransportService"/>
+        <owl:disjointWith rdf:resource="https://purl.archive.org/tourism-utilities-ontology#TouristicAttraction"/>
         <rdfs:comment>Touristic resource that allows or facilitates mobility within an area.</rdfs:comment>
         <rdfs:label xml:lang="en">TransportUtility</rdfs:label>
     </owl:Class>
@@ -559,6 +563,7 @@
 
     <owl:Class rdf:about="https://purl.archive.org/tourism-utilities-ontology#Restaurant">
         <rdfs:subClassOf rdf:resource="http://schema.org/Restaurant"/>
+        <owl:disjointWith rdf:resource="https://purl.archive.org/tourism-utilities-ontology#TouristicAttraction"/>
         <rdfs:comment>See Restaurant (schema). This includes distinct data properties.</rdfs:comment>
         <rdfs:label xml:lang="en">Restaurant (distinct)</rdfs:label>
     </owl:Class>
@@ -8325,9 +8330,9 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://purl.archive.org/tourism-utilities-ontology#hosts"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#Y"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:propertyPredicate rdf:resource="https://purl.archive.org/tourism-utilities-ontology#takesPlaceIn"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#Y"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
@@ -8356,9 +8361,9 @@
                 <rdf:first>
                     <rdf:Description>
                         <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#IndividualPropertyAtom"/>
-                        <swrl:propertyPredicate rdf:resource="https://purl.archive.org/tourism-utilities-ontology#locatedIn"/>
-                        <swrl:argument1 rdf:resource="urn:swrl:var#X"/>
-                        <swrl:argument2 rdf:resource="urn:swrl:var#Y"/>
+                        <swrl:propertyPredicate rdf:resource="https://purl.archive.org/tourism-utilities-ontology#hosts"/>
+                        <swrl:argument1 rdf:resource="urn:swrl:var#Y"/>
+                        <swrl:argument2 rdf:resource="urn:swrl:var#X"/>
                     </rdf:Description>
                 </rdf:first>
                 <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
