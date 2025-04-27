@@ -112,6 +112,10 @@ xsd:date rdf:type rdfs:Datatype .
                       ] .
 
 
+###  https://purl.archive.org/tourism-utilities-ontology#isTypeOf
+:isTypeOf rdf:type owl:ObjectProperty .
+
+
 ###  https://purl.archive.org/tourism-utilities-ontology#locatedIn
 :locatedIn rdf:type owl:ObjectProperty .
 
@@ -273,6 +277,14 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 
 ###  https://purl.archive.org/tourism-utilities-ontology#EventType
 :EventType rdf:type owl:Class ;
+           owl:equivalentClass [ rdf:type owl:Class ;
+                                 owl:oneOf ( :culturalEvent
+                                             :gastronomicEvent
+                                             :musicEvent
+                                             :sportsEvent
+                                             :technologicalEvent
+                                           )
+                               ] ;
            rdfs:subClassOf schema:Enumeration ;
            rdfs:comment "Helps classificating an event by its characteristics" ;
            rdfs:label "EventType" .
@@ -5655,5 +5667,70 @@ owl:Thing rdfs:comment "Generic root concept of the ontology" ;
 :underground rdf:type owl:NamedIndividual ,
                       :TransportType .
 
+
+#################################################################
+#    Rules
+#################################################################
+
+<urn:swrl:var#X> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+<urn:swrl:var#Y> rdf:type <http://www.w3.org/2003/11/swrl#Variable> .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isOfType ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#Y>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :isTypeOf ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#Y> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#X>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :locatedIn ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#Y>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :hosts ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#Y> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#X>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
+
+[ rdf:type <http://www.w3.org/2003/11/swrl#Imp> ;
+   <http://www.w3.org/2003/11/swrl#body> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :takesPlaceIn ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#Y>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ] ;
+   <http://www.w3.org/2003/11/swrl#head> [ rdf:type <http://www.w3.org/2003/11/swrl#AtomList> ;
+                                           rdf:first [ rdf:type <http://www.w3.org/2003/11/swrl#IndividualPropertyAtom> ;
+                                                       <http://www.w3.org/2003/11/swrl#propertyPredicate> :locatedIn ;
+                                                       <http://www.w3.org/2003/11/swrl#argument1> <urn:swrl:var#X> ;
+                                                       <http://www.w3.org/2003/11/swrl#argument2> <urn:swrl:var#Y>
+                                                     ] ;
+                                           rdf:rest rdf:nil
+                                         ]
+ ] .
 
 ###  Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi
